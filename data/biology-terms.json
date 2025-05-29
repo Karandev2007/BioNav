@@ -1,0 +1,60 @@
+{
+  "terms": [
+    {
+      "id": "cell",
+      "term": "Cell",
+      "definition": "The basic structural and functional unit of all living organisms.",
+      "category": "Basic",
+      "related": ["nucleus", "cytoplasm", "membrane"]
+    },
+    {
+      "id": "dna",
+      "term": "DNA",
+      "definition": "Deoxyribonucleic acid, a molecule that carries genetic instructions for development and functioning of living things.",
+      "category": "Basic",
+      "related": ["rna", "genes", "chromosome"]
+    },
+    {
+      "id": "mitochondria",
+      "term": "Mitochondria",
+      "definition": "Organelles that generate energy for the cell through cellular respiration.",
+      "category": "Basic",
+      "related": ["atp", "cellular-respiration", "energy"]
+    },
+    {
+      "id": "photosynthesis",
+      "term": "Photosynthesis",
+      "definition": "The process by which plants convert light energy into chemical energy to produce glucose from carbon dioxide and water.",
+      "category": "Basic",
+      "related": ["chlorophyll", "glucose", "chloroplast"]
+    },
+    {
+      "id": "protein",
+      "term": "Protein",
+      "definition": "Large molecules composed of amino acids that are essential for the structure, function, and regulation of cells.",
+      "category": "Basic",
+      "related": ["amino-acids", "enzymes", "peptides"]
+    },
+    {
+      "id": "chromosome",
+      "term": "Chromosome",
+      "definition": "A structure of nucleic acids and protein found in the nucleus of most living cells, carrying genetic information.",
+      "category": "Advanced",
+      "related": ["dna", "genes", "mitosis"]
+    },
+    {
+      "id": "enzyme",
+      "term": "Enzyme",
+      "definition": "Proteins that act as biological catalysts, speeding up chemical reactions in living organisms.",
+      "category": "Advanced",
+      "related": ["protein", "metabolism", "substrate"]
+    },
+    {
+      "id": "membrane",
+      "term": "Cell Membrane",
+      "definition": "A biological membrane that separates the interior of a cell from the external environment.",
+      "category": "Basic",
+      "related": ["phospholipids", "transport", "osmosis"]
+    }
+  ]
+} 

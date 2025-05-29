@@ -1,0 +1,87 @@
+{
+  "pathogens": [
+    {
+      "id": "influenza-a",
+      "name": "Influenza A Virus",
+      "type": "Virus",
+      "description": "A highly contagious respiratory virus that causes seasonal flu epidemics.",
+      "symptoms": [
+        "Fever",
+        "Cough",
+        "Fatigue",
+        "Body aches",
+        "Headache"
+      ],
+      "transmission": "Airborne droplets, close contact",
+      "prevention": [
+        "Annual vaccination",
+        "Hand hygiene",
+        "Respiratory etiquette"
+      ],
+      "severity": "Moderate to High",
+      "treatment": "Antiviral medications, supportive care"
+    },
+    {
+      "id": "e-coli",
+      "name": "Escherichia coli",
+      "type": "Bacteria",
+      "description": "A bacterium commonly found in the intestines, some strains can cause severe illness.",
+      "symptoms": [
+        "Diarrhea",
+        "Abdominal cramps",
+        "Nausea",
+        "Vomiting",
+        "Fever"
+      ],
+      "transmission": "Contaminated food or water",
+      "prevention": [
+        "Food safety practices",
+        "Hand washing",
+        "Clean water"
+      ],
+      "severity": "Mild to Severe",
+      "treatment": "Antibiotics (in severe cases), hydration"
+    },
+    {
+      "id": "p-falciparum",
+      "name": "Plasmodium falciparum",
+      "type": "Protozoa",
+      "description": "A parasitic protozoan that causes malaria, transmitted by mosquitoes.",
+      "symptoms": [
+        "High fever",
+        "Chills",
+        "Sweating",
+        "Headache",
+        "Muscle pain"
+      ],
+      "transmission": "Mosquito bites",
+      "prevention": [
+        "Mosquito nets",
+        "Insect repellent",
+        "Antimalarial drugs"
+      ],
+      "severity": "High",
+      "treatment": "Antimalarial medications"
+    },
+    {
+      "id": "c-albicans",
+      "name": "Candida albicans",
+      "type": "Fungus",
+      "description": "A fungal species that can cause opportunistic infections in humans.",
+      "symptoms": [
+        "White patches",
+        "Redness",
+        "Itching",
+        "Burning sensation"
+      ],
+      "transmission": "Direct contact, compromised immunity",
+      "prevention": [
+        "Good hygiene",
+        "Balanced diet",
+        "Immune system support"
+      ],
+      "severity": "Mild to Moderate",
+      "treatment": "Antifungal medications"
+    }
+  ]
+} 
