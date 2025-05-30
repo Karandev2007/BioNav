@@ -1,8 +1,8 @@
 "use client";
 
-import { SignIn } from "@clerk/nextjs";
+import Link from "next/link";
 
-export default function LoginPage() {
+export default function HomePage() {
   return (
     <div className="min-h-screen bg-background">
       {/* hero Section */}
@@ -32,9 +32,14 @@ export default function LoginPage() {
               Explore biology concepts, study pathogens, create flashcards, and chat with our AI tutor.
             </p>
             
-            {/* clerk signin */}
-            <div className="mt-10 flex justify-center">
-              <SignIn afterSignInUrl="/dashboard" routing="path" path="/sign-in" />
+            {/* login button */}
+            <div className="mt-10 flex items-center justify-center gap-x-6">
+              <a
+                href="https://in-tapir-82.accounts.dev/sign-in"
+                className="rounded-md bg-primary px-6 py-3 text-lg font-semibold text-primary-foreground shadow-sm hover:bg-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              >
+                Login to Get Started
+              </a>
             </div>
           </div>
         </div>

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { UserButton, SignOutButton } from "@clerk/nextjs";
 
 const routes = [
   {
@@ -54,11 +55,12 @@ export function Sidebar() {
 
   return (
     <div className="flex h-full w-full flex-col space-y-4 bg-card py-4">
-      <div className="px-3 py-2">
+      <div className="flex items-center justify-between px-3 py-2">
         <Link href="/dashboard" className="flex items-center gap-2 pl-3">
           <span className="text-2xl">🧬</span>
           <h1 className="text-xl font-bold text-primary">BioNav</h1>
         </Link>
+        <UserButton afterSignOutUrl="/" />
       </div>
       <div className="flex-1 space-y-1 px-3">
         {routes.map((route) => (
@@ -76,6 +78,12 @@ export function Sidebar() {
             {route.label}
           </Link>
         ))}
+        <SignOutButton>
+          <button className="flex w-full items-center gap-x-3 rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground">
+            <span className="text-xl">🚪</span>
+            Logout
+          </button>
+        </SignOutButton>
       </div>
       <div className="px-3 py-2">
         <footer className="text-center text-xs text-muted-foreground">
