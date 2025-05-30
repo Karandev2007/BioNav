@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { UserButton, SignOutButton } from "@clerk/nextjs";
 
@@ -52,6 +52,7 @@ const routes = [
 
 export function Sidebar() {
   const pathname = usePathname();
+  const router = useRouter();
 
   return (
     <div className="flex h-full w-full flex-col space-y-4 bg-card py-4">
@@ -78,7 +79,7 @@ export function Sidebar() {
             {route.label}
           </Link>
         ))}
-        <SignOutButton>
+        <SignOutButton signOutCallback={() => router.push("/")}>
           <button className="flex w-full items-center gap-x-3 rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground">
             <span className="text-xl">🚪</span>
             Logout
