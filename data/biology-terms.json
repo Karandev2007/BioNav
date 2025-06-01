@@ -5,56 +5,1045 @@
       "term": "Cell",
       "definition": "The basic structural and functional unit of all living organisms.",
       "category": "Basic",
-      "related": ["nucleus", "cytoplasm", "membrane"]
+      "related": [
+        "nucleus",
+        "cytoplasm",
+        "membrane"
+      ]
     },
     {
       "id": "dna",
       "term": "DNA",
       "definition": "Deoxyribonucleic acid, a molecule that carries genetic instructions for development and functioning of living things.",
       "category": "Basic",
-      "related": ["rna", "genes", "chromosome"]
+      "related": [
+        "rna",
+        "genes",
+        "chromosome"
+      ]
     },
     {
       "id": "mitochondria",
       "term": "Mitochondria",
       "definition": "Organelles that generate energy for the cell through cellular respiration.",
       "category": "Basic",
-      "related": ["atp", "cellular-respiration", "energy"]
+      "related": [
+        "atp",
+        "cellular-respiration",
+        "energy"
+      ]
     },
     {
       "id": "photosynthesis",
       "term": "Photosynthesis",
       "definition": "The process by which plants convert light energy into chemical energy to produce glucose from carbon dioxide and water.",
       "category": "Basic",
-      "related": ["chlorophyll", "glucose", "chloroplast"]
+      "related": [
+        "chlorophyll",
+        "glucose",
+        "chloroplast"
+      ]
     },
     {
       "id": "protein",
       "term": "Protein",
       "definition": "Large molecules composed of amino acids that are essential for the structure, function, and regulation of cells.",
       "category": "Basic",
-      "related": ["amino-acids", "enzymes", "peptides"]
+      "related": [
+        "amino-acids",
+        "enzymes",
+        "peptides"
+      ]
     },
     {
       "id": "chromosome",
       "term": "Chromosome",
       "definition": "A structure of nucleic acids and protein found in the nucleus of most living cells, carrying genetic information.",
       "category": "Advanced",
-      "related": ["dna", "genes", "mitosis"]
+      "related": [
+        "dna",
+        "genes",
+        "mitosis"
+      ]
     },
     {
       "id": "enzyme",
       "term": "Enzyme",
       "definition": "Proteins that act as biological catalysts, speeding up chemical reactions in living organisms.",
       "category": "Advanced",
-      "related": ["protein", "metabolism", "substrate"]
+      "related": [
+        "protein",
+        "metabolism",
+        "substrate"
+      ]
     },
     {
       "id": "membrane",
       "term": "Cell Membrane",
       "definition": "A biological membrane that separates the interior of a cell from the external environment.",
       "category": "Basic",
-      "related": ["phospholipids", "transport", "osmosis"]
+      "related": [
+        "phospholipids",
+        "transport",
+        "osmosis"
+      ]
+    },
+    {
+      "id": "allele",
+      "term": "Allele",
+      "definition": "A variant form of a gene at a particular locus on a chromosome.",
+      "category": "Basic",
+      "related": [
+        "gene",
+        "genotype",
+        "phenotype"
+      ]
+    },
+    {
+      "id": "osmosis",
+      "term": "Osmosis",
+      "definition": "The movement of water molecules through a semipermeable membrane from a region of lower solute concentration to higher concentration.",
+      "category": "Basic",
+      "related": [
+        "diffusion",
+        "cell-membrane",
+        "water-potential"
+      ]
+    },
+    {
+      "id": "ribosome",
+      "term": "Ribosome",
+      "definition": "A molecular machine within cells that synthesizes proteins by translating messenger RNA.",
+      "category": "Basic",
+      "related": [
+        "rna",
+        "protein-synthesis",
+        "translation"
+      ]
+    },
+    {
+      "id": "chloroplast",
+      "term": "Chloroplast",
+      "definition": "An organelle in plant cells where photosynthesis occurs.",
+      "category": "Basic",
+      "related": [
+        "photosynthesis",
+        "chlorophyll",
+        "plant-cell"
+      ]
+    },
+    {
+      "id": "homeostasis",
+      "term": "Homeostasis",
+      "definition": "The ability of an organism or environment to maintain stability despite changes.",
+      "category": "Basic",
+      "related": [
+        "regulation",
+        "feedback-loop",
+        "equilibrium"
+      ]
+    },
+    {
+      "id": "mutation",
+      "term": "Mutation",
+      "definition": "A change in the DNA sequence that can lead to variations in traits.",
+      "category": "Advanced",
+      "related": [
+        "gene",
+        "dna",
+        "genetic-variation"
+      ]
+    },
+    {
+      "id": "meiosis",
+      "term": "Meiosis",
+      "definition": "A type of cell division that reduces the chromosome number by half, producing four gamete cells.",
+      "category": "Advanced",
+      "related": [
+        "mitosis",
+        "gametes",
+        "chromosome"
+      ]
+    },
+    {
+      "id": "transcription",
+      "term": "Transcription",
+      "definition": "The process of copying a segment of DNA into RNA.",
+      "category": "Advanced",
+      "related": [
+        "dna",
+        "rna",
+        "gene-expression"
+      ]
+    },
+    {
+      "id": "translation",
+      "term": "Translation",
+      "definition": "The process by which a protein is synthesized from the information contained in a molecule of messenger RNA.",
+      "category": "Advanced",
+      "related": [
+        "transcription",
+        "ribosome",
+        "protein"
+      ]
+    },
+    {
+      "id": "cytoskeleton",
+      "term": "Cytoskeleton",
+      "definition": "A network of protein filaments and tubules in the cytoplasm that provides structural support for the cell.",
+      "category": "Advanced",
+      "related": [
+        "microtubules",
+        "actin",
+        "cell-structure"
+      ]
+    },
+    {
+      "id": "lysosome",
+      "term": "Lysosome",
+      "definition": "An organelle in the cytoplasm of eukaryotic cells containing degradative enzymes enclosed in a membrane.",
+      "category": "Basic",
+      "related": [
+        "digestive-enzymes",
+        "organelle",
+        "waste"
+      ]
+    },
+    {
+      "id": "golgi-apparatus",
+      "term": "Golgi Apparatus",
+      "definition": "An organelle responsible for modifying, sorting, and packaging proteins and lipids for secretion or use within the cell.",
+      "category": "Basic",
+      "related": [
+        "endoplasmic-reticulum",
+        "protein",
+        "vesicle"
+      ]
+    },
+    {
+      "id": "endoplasmic-reticulum",
+      "term": "Endoplasmic Reticulum",
+      "definition": "A network of membranes within the cytoplasm involved in protein and lipid synthesis.",
+      "category": "Basic",
+      "related": [
+        "rough-er",
+        "smooth-er",
+        "protein-synthesis"
+      ]
+    },
+    {
+      "id": "rough-er",
+      "term": "Rough Endoplasmic Reticulum",
+      "definition": "A type of endoplasmic reticulum that is studded with ribosomes and plays a role in protein synthesis.",
+      "category": "Advanced",
+      "related": [
+        "ribosome",
+        "protein",
+        "golgi-apparatus"
+      ]
+    },
+    {
+      "id": "smooth-er",
+      "term": "Smooth Endoplasmic Reticulum",
+      "definition": "A type of endoplasmic reticulum involved in lipid synthesis and detoxification, lacking ribosomes.",
+      "category": "Advanced",
+      "related": [
+        "lipid",
+        "detoxification",
+        "rough-er"
+      ]
+    },
+    {
+      "id": "vacuole",
+      "term": "Vacuole",
+      "definition": "A membrane-bound organelle used for storage, especially prominent in plant cells.",
+      "category": "Basic",
+      "related": [
+        "plant-cell",
+        "storage",
+        "water"
+      ]
+    },
+    {
+      "id": "plasmid",
+      "term": "Plasmid",
+      "definition": "A small, circular, double-stranded DNA molecule distinct from a cell’s chromosomal DNA, often found in bacteria.",
+      "category": "Advanced",
+      "related": [
+        "bacteria",
+        "dna",
+        "genetic-engineering"
+      ]
+    },
+    {
+      "id": "binary-fission",
+      "term": "Binary Fission",
+      "definition": "A method of asexual reproduction in single-celled organisms by which one cell divides into two cells of the same size.",
+      "category": "Basic",
+      "related": [
+        "prokaryote",
+        "asexual-reproduction",
+        "bacteria"
+      ]
+    },
+    {
+      "id": "taxonomy",
+      "term": "Taxonomy",
+      "definition": "The science of classifying organisms into ordered systems based on characteristics and evolutionary history.",
+      "category": "Basic",
+      "related": [
+        "classification",
+        "species",
+        "phylogeny"
+      ]
+    },
+    {
+      "id": "gene",
+      "term": "Gene",
+      "definition": "A segment of DNA that contains the instructions for building a specific protein or set of proteins.",
+      "category": "Basic",
+      "related": [
+        "dna",
+        "allele",
+        "genotype"
+      ]
+    },
+    {
+      "id": "genotype",
+      "term": "Genotype",
+      "definition": "The genetic makeup of an organism in terms of the alleles present.",
+      "category": "Basic",
+      "related": [
+        "phenotype",
+        "allele",
+        "gene"
+      ]
+    },
+    {
+      "id": "phenotype",
+      "term": "Phenotype",
+      "definition": "The observable characteristics or traits of an organism resulting from the interaction of its genotype with the environment.",
+      "category": "Basic",
+      "related": [
+        "genotype",
+        "allele",
+        "trait"
+      ]
+    },
+    {
+      "id": "bacteria",
+      "term": "Bacteria",
+      "definition": "Single-celled prokaryotic organisms that can be found in diverse environments and may be beneficial or pathogenic.",
+      "category": "Basic",
+      "related": [
+        "prokaryote",
+        "plasmid",
+        "binary-fission"
+      ]
+    },
+    {
+      "id": "virus",
+      "term": "Virus",
+      "definition": "A non-cellular infectious agent composed of genetic material enclosed in a protein coat, requiring a host cell to replicate.",
+      "category": "Advanced",
+      "related": [
+        "host",
+        "infection",
+        "genetic-material"
+      ]
+    },
+    {
+      "id": "antibody",
+      "term": "Antibody",
+      "definition": "A protein produced by the immune system that binds to specific antigens to neutralize or mark them for destruction.",
+      "category": "Basic",
+      "related": [
+        "antigen",
+        "immune-system",
+        "pathogen"
+      ]
+    },
+    {
+      "id": "antigen",
+      "term": "Antigen",
+      "definition": "A substance or molecule that is recognized by the immune system and can trigger an immune response.",
+      "category": "Basic",
+      "related": [
+        "antibody",
+        "immune-response",
+        "pathogen"
+      ]
+    },
+    {
+      "id": "pathogen",
+      "term": "Pathogen",
+      "definition": "A microorganism or agent, such as a virus, bacterium, or fungus, that causes disease.",
+      "category": "Basic",
+      "related": [
+        "bacteria",
+        "virus",
+        "immune-system"
+      ]
+    },
+    {
+      "id": "methylation",
+      "term": "Methylation",
+      "definition": "A chemical modification of DNA that can affect gene expression without changing the DNA sequence.",
+      "category": "Advanced",
+      "related": [
+        "epigenetics",
+        "gene-expression",
+        "chromatin"
+      ]
+    },
+    {
+      "id": "microtubules",
+      "term": "Microtubules",
+      "definition": "Hollow protein tubes that are part of the cytoskeleton, involved in maintaining cell shape, intracellular transport, and cell division.",
+      "category": "Advanced",
+      "related": [
+        "cytoskeleton",
+        "cell-division",
+        "motor-proteins"
+      ]
+    },
+    {
+      "id": "actin",
+      "term": "Actin",
+      "definition": "A protein that forms microfilaments, which are part of the cytoskeleton and play a role in cell movement and shape.",
+      "category": "Advanced",
+      "related": [
+        "cytoskeleton",
+        "microfilaments",
+        "cell-motility"
+      ]
+    },
+    {
+      "id": "photosystem",
+      "term": "Photosystem",
+      "definition": "A protein-pigment complex in chloroplasts that captures light energy for photosynthesis.",
+      "category": "Advanced",
+      "related": [
+        "chlorophyll",
+        "photosynthesis",
+        "electron-transport-chain"
+      ]
+    },
+    {
+      "id": "electron-transport-chain",
+      "term": "Electron Transport Chain",
+      "definition": "A series of protein complexes that transfer electrons through a membrane to generate ATP during cellular respiration or photosynthesis.",
+      "category": "Advanced",
+      "related": [
+        "mitochondria",
+        "photosynthesis",
+        "atp"
+      ]
+    },
+    {
+      "id": "autophagy",
+      "term": "Autophagy",
+      "definition": "A process by which cells degrade and recycle their own components through lysosomes.",
+      "category": "Advanced",
+      "related": [
+        "lysosome",
+        "cellular-recycling",
+        "homeostasis"
+      ]
+    },
+    {
+      "id": "glycolysis",
+      "term": "Glycolysis",
+      "definition": "The metabolic pathway that converts glucose into pyruvate, producing ATP and NADH in the process.",
+      "category": "Advanced",
+      "related": [
+        "cellular-respiration",
+        "atp",
+        "mitochondria"
+      ]
+    },
+    {
+      "id": "transmembrane-protein",
+      "term": "Transmembrane Protein",
+      "definition": "Proteins that span across the cell membrane and assist in transporting molecules and signaling.",
+      "category": "Advanced",
+      "related": [
+        "cell-membrane",
+        "transport",
+        "receptor"
+      ]
+    },
+    {
+      "id": "ligand",
+      "term": "Ligand",
+      "definition": "A molecule that binds specifically to a receptor site on a protein, often to trigger a biological response.",
+      "category": "Advanced",
+      "related": [
+        "receptor",
+        "signal-transduction",
+        "transmembrane-protein"
+      ]
+    },
+    {
+      "id": "signal-transduction",
+      "term": "Signal Transduction",
+      "definition": "The process by which a chemical or physical signal is transmitted through a cell as a series of molecular events.",
+      "category": "Advanced",
+      "related": [
+        "ligand",
+        "receptor",
+        "cell-signaling"
+      ]
+    },
+    {
+      "id": "genome",
+      "term": "Genome",
+      "definition": "The complete set of genetic material in an organism, including all of its genes and non-coding sequences.",
+      "category": "Advanced",
+      "related": [
+        "dna",
+        "chromosome",
+        "genes"
+      ]
+    },
+    {
+      "id": "dna-methylation",
+      "term": "DNA Methylation",
+      "definition": "A chemical modification of DNA that affects gene expression without altering the DNA sequence.",
+      "category": "Advanced",
+      "related": [
+        "epigenetics",
+        "gene-expression",
+        "genome"
+      ]
+    },
+    {
+      "id": "histones",
+      "term": "Histones",
+      "definition": "Proteins that package and order DNA into structural units called nucleosomes in the nucleus.",
+      "category": "Advanced",
+      "related": [
+        "chromatin",
+        "dna",
+        "epigenetics"
+      ]
+    },
+    {
+      "id": "plasmolysis",
+      "term": "Plasmolysis",
+      "definition": "The process in which cells lose water in a hypertonic solution, causing the cell membrane to shrink away from the cell wall.",
+      "category": "Basic",
+      "related": [
+        "osmosis",
+        "cell-membrane",
+        "hypertonic"
+      ]
+    },
+    {
+      "id": "hypertonic",
+      "term": "Hypertonic",
+      "definition": "A solution with a higher concentration of solutes compared to another solution, causing water to move out of cells.",
+      "category": "Basic",
+      "related": [
+        "osmosis",
+        "plasmolysis",
+        "hypotonic"
+      ]
+    },
+    {
+      "id": "hypotonic",
+      "term": "Hypotonic",
+      "definition": "A solution with a lower concentration of solutes compared to another solution, causing water to move into cells.",
+      "category": "Basic",
+      "related": [
+        "osmosis",
+        "cell-swelling",
+        "hypertonic"
+      ]
+    },
+    {
+      "id": "aquaporin",
+      "term": "Aquaporin",
+      "definition": "A membrane protein that facilitates the transport of water molecules across cell membranes.",
+      "category": "Advanced",
+      "related": [
+        "cell-membrane",
+        "osmosis",
+        "water-transport"
+      ]
+    },
+    {
+      "id": "autotroph",
+      "term": "Autotroph",
+      "definition": "An organism that produces its own food from inorganic substances using light or chemical energy.",
+      "category": "Basic",
+      "related": [
+        "photosynthesis",
+        "plants",
+        "chemotroph"
+      ]
+    },
+    {
+      "id": "heterotroph",
+      "term": "Heterotroph",
+      "definition": "An organism that obtains its food and energy by consuming other organisms.",
+      "category": "Basic",
+      "related": [
+        "autotroph",
+        "consumer",
+        "decomposer"
+      ]
+    },
+    {
+      "id": "consumer",
+      "term": "Consumer",
+      "definition": "An organism that feeds on other organisms in a food chain.",
+      "category": "Basic",
+      "related": [
+        "heterotroph",
+        "producer",
+        "decomposer"
+      ]
+    },
+    {
+      "id": "decomposer",
+      "term": "Decomposer",
+      "definition": "Organisms that break down dead or decaying organisms, recycling nutrients back into the ecosystem.",
+      "category": "Basic",
+      "related": [
+        "fungi",
+        "bacteria",
+        "nutrient-cycle"
+      ]
+    },
+    {
+      "id": "fungi",
+      "term": "Fungi",
+      "definition": "A kingdom of usually multicellular organisms that absorb nutrients from organic material, including molds, yeast, and mushrooms.",
+      "category": "Basic",
+      "related": [
+        "decomposer",
+        "mycelium",
+        "spores"
+      ]
+    },
+    {
+      "id": "mycelium",
+      "term": "Mycelium",
+      "definition": "The network of fine white filaments (hyphae) that forms the main body of a fungus.",
+      "category": "Basic",
+      "related": [
+        "fungi",
+        "hyphae",
+        "decomposer"
+      ]
+    },
+    {
+      "id": "hyphae",
+      "term": "Hyphae",
+      "definition": "The thread-like structures that make up the mycelium of a fungus.",
+      "category": "Basic",
+      "related": [
+        "mycelium",
+        "fungi",
+        "spores"
+      ]
+    },
+    {
+      "id": "spores",
+      "term": "Spores",
+      "definition": "Reproductive cells capable of developing into a new individual without fusion with another cell.",
+      "category": "Basic",
+      "related": [
+        "fungi",
+        "reproduction",
+        "dispersal"
+      ]
+    },
+    {
+      "id": "biodiversity",
+      "term": "Biodiversity",
+      "definition": "The variety and variability of life forms within a given ecosystem, biome, or the entire Earth.",
+      "category": "Basic",
+      "related": [
+        "ecosystem",
+        "species",
+        "conservation"
+      ]
+    },
+    {
+      "id": "ecosystem",
+      "term": "Ecosystem",
+      "definition": "A community of living organisms interacting with each other and their physical environment.",
+      "category": "Basic",
+      "related": [
+        "biodiversity",
+        "habitat",
+        "food-web"
+      ]
+    },
+    {
+      "id": "habitat",
+      "term": "Habitat",
+      "definition": "The natural environment where an organism lives and grows.",
+      "category": "Basic",
+      "related": [
+        "ecosystem",
+        "niche",
+        "population"
+      ]
+    },
+    {
+      "id": "niche",
+      "term": "Niche",
+      "definition": "The role or function of an organism or species within an ecosystem, including its use of resources and relationships with other organisms.",
+      "category": "Basic",
+      "related": [
+        "habitat",
+        "ecosystem",
+        "competition"
+      ]
+    },
+    {
+      "id": "population",
+      "term": "Population",
+      "definition": "A group of individuals of the same species living in a specific geographic area at the same time.",
+      "category": "Basic",
+      "related": [
+        "community",
+        "species",
+        "gene-pool"
+      ]
+    },
+    {
+      "id": "community",
+      "term": "Community",
+      "definition": "An assemblage of different populations of organisms living and interacting in a particular area.",
+      "category": "Basic",
+      "related": [
+        "population",
+        "ecosystem",
+        "biodiversity"
+      ]
+    },
+    {
+      "id": "gene-pool",
+      "term": "Gene Pool",
+      "definition": "The complete set of different genes and alleles present in a population.",
+      "category": "Basic",
+      "related": [
+        "population",
+        "genetic-variation",
+        "allele"
+      ]
+    },
+    {
+      "id": "genetic-drift",
+      "term": "Genetic Drift",
+      "definition": "A change in the frequency of alleles in a population due to random sampling effects.",
+      "category": "Advanced",
+      "related": [
+        "gene-pool",
+        "mutation",
+        "natural-selection"
+      ]
+    },
+    {
+      "id": "natural-selection",
+      "term": "Natural Selection",
+      "definition": "The process by which organisms better adapted to their environment tend to survive and produce more offspring.",
+      "category": "Advanced",
+      "related": [
+        "evolution",
+        "mutation",
+        "genetic-variation"
+      ]
+    },
+    {
+      "id": "evolution",
+      "term": "Evolution",
+      "definition": "The change in the heritable characteristics of biological populations over successive generations.",
+      "category": "Advanced",
+      "related": [
+        "natural-selection",
+        "mutation",
+        "speciation"
+      ]
+    },
+    {
+      "id": "speciation",
+      "term": "Speciation",
+      "definition": "The evolutionary process by which populations evolve to become distinct species.",
+      "category": "Advanced",
+      "related": [
+        "evolution",
+        "genetic-isolation",
+        "mutation"
+      ]
+    },
+    {
+      "id": "genetic-isolation",
+      "term": "Genetic Isolation",
+      "definition": "The separation of populations so that they no longer interbreed, leading to speciation.",
+      "category": "Advanced",
+      "related": [
+        "speciation",
+        "population",
+        "gene-flow"
+      ]
+    },
+    {
+      "id": "gene-flow",
+      "term": "Gene Flow",
+      "definition": "The transfer of genetic material between populations of the same species.",
+      "category": "Advanced",
+      "related": [
+        "genetic-isolation",
+        "population",
+        "genetic-drift"
+      ]
+    },
+    {
+      "id": "allele-frequency",
+      "term": "Allele Frequency",
+      "definition": "The relative frequency of an allele at a particular locus in a population, expressed as a proportion or percentage.",
+      "category": "Advanced",
+      "related": [
+        "gene-pool",
+        "genetic-drift",
+        "natural-selection"
+      ]
+    },
+    {
+      "id": "homeostasis-feedback",
+      "term": "Feedback Mechanism",
+      "definition": "A biological process where the output of a system influences its own activity, maintaining stability through negative or positive feedback.",
+      "category": "Basic",
+      "related": [
+        "homeostasis",
+        "regulation",
+        "equilibrium"
+      ]
+    },
+    {
+      "id": "allelic-exclusion",
+      "term": "Allelic Exclusion",
+      "definition": "A process ensuring that only one allele of a gene is expressed while the other is silenced in diploid organisms.",
+      "category": "Advanced",
+      "related": [
+        "allele",
+        "gene-expression",
+        "genotype"
+      ]
+    },
+    {
+      "id": "plasma-membrane",
+      "term": "Plasma Membrane",
+      "definition": "The biological membrane that separates the interior of all cells from the outside environment, regulating substance passage.",
+      "category": "Basic",
+      "related": [
+        "cell-membrane",
+        "osmosis",
+        "transport"
+      ]
+    },
+    {
+      "id": "photophosphorylation",
+      "term": "Photophosphorylation",
+      "definition": "The process of generating ATP from ADP and inorganic phosphate using the energy of sunlight during photosynthesis.",
+      "category": "Advanced",
+      "related": [
+        "photosynthesis",
+        "atp",
+        "chloroplast"
+      ]
+    },
+    {
+      "id": "gene-expression",
+      "term": "Gene Expression",
+      "definition": "The process by which information from a gene is used to synthesize functional gene products like proteins or RNA.",
+      "category": "Advanced",
+      "related": [
+        "transcription",
+        "translation",
+        "dna"
+      ]
+    },
+    {
+      "id": "epigenetics",
+      "term": "Epigenetics",
+      "definition": "The study of changes in gene activity that do not involve alterations to the DNA sequence but affect gene expression.",
+      "category": "Advanced",
+      "related": [
+        "gene-expression",
+        "dna",
+        "chromatin"
+      ]
+    },
+    {
+      "id": "chromatin",
+      "term": "Chromatin",
+      "definition": "A complex of DNA and proteins found in the nucleus, which packages DNA into a more compact form.",
+      "category": "Advanced",
+      "related": [
+        "chromosome",
+        "dna",
+        "epigenetics"
+      ]
+    },
+    {
+      "id": "endocytosis",
+      "term": "Endocytosis",
+      "definition": "The process by which cells internalize molecules and particles by engulfing them in a vesicle.",
+      "category": "Basic",
+      "related": [
+        "exocytosis",
+        "vesicle",
+        "cell-membrane"
+      ]
+    },
+    {
+      "id": "exocytosis",
+      "term": "Exocytosis",
+      "definition": "The process by which cells expel materials in vesicles that fuse with the plasma membrane.",
+      "category": "Basic",
+      "related": [
+        "endocytosis",
+        "vesicle",
+        "cell-membrane"
+      ]
+    },
+    {
+      "id": "flagella",
+      "term": "Flagella",
+      "definition": "Long, whip-like structures used by some cells for movement.",
+      "category": "Basic",
+      "related": [
+        "cilia",
+        "motility",
+        "prokaryote"
+      ]
+    },
+    {
+      "id": "cilia",
+      "term": "Cilia",
+      "definition": "Short, hair-like structures on the surface of some cells that aid in movement or sensing the environment.",
+      "category": "Basic",
+      "related": [
+        "flagella",
+        "motility",
+        "epithelial-cells"
+      ]
+    },
+    {
+      "id": "genetic-recombination",
+      "term": "Genetic Recombination",
+      "definition": "The process by which genetic material is rearranged during meiosis, leading to new gene combinations.",
+      "category": "Advanced",
+      "related": [
+        "meiosis",
+        "crossing-over",
+        "chromosome"
+      ]
+    },
+    {
+      "id": "crossing-over",
+      "term": "Crossing Over",
+      "definition": "The exchange of genetic material between homologous chromosomes during meiosis.",
+      "category": "Advanced",
+      "related": [
+        "genetic-recombination",
+        "meiosis",
+        "chromosome"
+      ]
+    },
+    {
+      "id": "antigen-presenting-cell",
+      "term": "Antigen Presenting Cell (APC)",
+      "definition": "A cell that displays foreign antigens complexed with major histocompatibility complexes on its surface to T-cells.",
+      "category": "Advanced",
+      "related": [
+        "immune-system",
+        "antigen",
+        "t-cell"
+      ]
+    },
+    {
+      "id": "t-cell",
+      "term": "T-Cell",
+      "definition": "A type of lymphocyte that plays a central role in cell-mediated immunity.",
+      "category": "Basic",
+      "related": [
+        "immune-system",
+        "antigen-presenting-cell",
+        "b-cell"
+      ]
+    },
+    {
+      "id": "b-cell",
+      "term": "B-Cell",
+      "definition": "A type of lymphocyte responsible for producing antibodies as part of the adaptive immune response.",
+      "category": "Basic",
+      "related": [
+        "immune-system",
+        "antibody",
+        "t-cell"
+      ]
+    },
+    {
+      "id": "plasmodesmata",
+      "term": "Plasmodesmata",
+      "definition": "Channels between plant cell walls that allow transport and communication between cells.",
+      "category": "Advanced",
+      "related": [
+        "plant-cell",
+        "cell-wall",
+        "communication"
+      ]
+    },
+    {
+      "id": "receptor",
+      "term": "Receptor",
+      "definition": "A protein molecule that receives and responds to a chemical signal.",
+      "category": "Basic",
+      "related": [
+        "signal-transduction",
+        "ligand",
+        "cell-membrane"
+      ]
+    },
+    {
+      "id": "cytokinesis",
+      "term": "Cytokinesis",
+      "definition": "The division of the cytoplasm of a parental cell into two daughter cells after mitosis or meiosis.",
+      "category": "Advanced",
+      "related": [
+        "mitosis",
+        "meiosis",
+        "cell-division"
+      ]
+    },
+    {
+      "id": "kinetochore",
+      "term": "Kinetochore",
+      "definition": "A protein structure on chromatids where spindle fibers attach during cell division to pull sister chromatids apart.",
+      "category": "Advanced",
+      "related": [
+        "chromosome",
+        "mitosis",
+        "spindle-fibers"
+      ]
+    },
+    {
+      "id": "spindle-fibers",
+      "term": "Spindle Fibers",
+      "definition": "Microtubules that form during cell division and are responsible for separating chromosomes.",
+      "category": "Advanced",
+      "related": [
+        "mitosis",
+        "kinetochore",
+        "microtubules"
+      ]
     }
   ]
-} 
+}

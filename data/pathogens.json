@@ -47,6 +47,1238 @@
       "description": "Skin infections",
       "emoji": "🦠",
       "color": "bg-orange-500/10 text-orange-500"
+    },
+    {
+      "id": 7,
+      "name": "Mycobacterium tuberculosis",
+      "type": "Bacteria",
+      "description": "Tuberculosis",
+      "emoji": "🧫",
+      "color": "bg-red-600/10 text-red-600"
+    },
+    {
+      "id": 8,
+      "name": "HIV",
+      "type": "Virus",
+      "description": "AIDS",
+      "emoji": "🧬",
+      "color": "bg-pink-500/10 text-pink-500"
+    },
+    {
+      "id": 9,
+      "name": "Giardia lamblia",
+      "type": "Parasite",
+      "description": "Giardiasis",
+      "emoji": "🦠",
+      "color": "bg-emerald-500/10 text-emerald-500"
+    },
+    {
+      "id": 10,
+      "name": "Cryptococcus neoformans",
+      "type": "Fungus",
+      "description": "Cryptococcal meningitis",
+      "emoji": "🍄",
+      "color": "bg-indigo-500/10 text-indigo-500"
+    },
+    {
+      "id": 11,
+      "name": "Zika virus",
+      "type": "Virus",
+      "description": "Zika fever, birth defects",
+      "emoji": "🦟",
+      "color": "bg-yellow-400/10 text-yellow-400"
+    },
+    {
+      "id": 12,
+      "name": "Salmonella enterica",
+      "type": "Bacteria",
+      "description": "Foodborne illness",
+      "emoji": "🥚",
+      "color": "bg-orange-400/10 text-orange-400"
+    },
+    {
+      "id": 13,
+      "name": "Trypanosoma brucei",
+      "type": "Parasite",
+      "description": "African sleeping sickness",
+      "emoji": "🧬",
+      "color": "bg-purple-400/10 text-purple-400"
+    },
+    {
+      "id": 14,
+      "name": "Toxoplasma gondii",
+      "type": "Parasite",
+      "description": "Toxoplasmosis",
+      "emoji": "🐱",
+      "color": "bg-pink-400/10 text-pink-400"
+    },
+    {
+      "id": 15,
+      "name": "Norovirus",
+      "type": "Virus",
+      "description": "Stomach flu",
+      "emoji": "🦠",
+      "color": "bg-blue-400/10 text-blue-400"
+    },
+    {
+      "id": 16,
+      "name": "Neisseria meningitidis",
+      "type": "Bacteria",
+      "description": "Meningitis",
+      "emoji": "🧫",
+      "color": "bg-cyan-500/10 text-cyan-500"
+    },
+    {
+      "id": 17,
+      "name": "Prion",
+      "type": "Prion",
+      "description": "Creutzfeldt–Jakob disease",
+      "emoji": "🧠",
+      "color": "bg-gray-500/10 text-gray-500"
+    },
+    {
+      "id": 18,
+      "name": "Aspergillus fumigatus",
+      "type": "Fungus",
+      "description": "Aspergillosis",
+      "emoji": "🍄",
+      "color": "bg-lime-500/10 text-lime-500"
+    },
+    {
+      "id": 19,
+      "name": "Rabies virus",
+      "type": "Virus",
+      "description": "Rabies",
+      "emoji": "🐶",
+      "color": "bg-rose-500/10 text-rose-500"
+    },
+    {
+      "id": 20,
+      "name": "Clostridium tetani",
+      "type": "Bacteria",
+      "description": "Tetanus",
+      "emoji": "🧪",
+      "color": "bg-teal-500/10 text-teal-500"
+    },
+    {
+      "id": 21,
+      "name": "Helicobacter pylori",
+      "type": "Bacteria",
+      "description": "Stomach ulcers",
+      "emoji": "🦠",
+      "color": "bg-red-400/10 text-red-400"
+    },
+    {
+      "id": 22,
+      "name": "Ebola virus",
+      "type": "Virus",
+      "description": "Hemorrhagic fever",
+      "emoji": "🧬",
+      "color": "bg-black/10 text-black"
+    },
+    {
+      "id": 23,
+      "name": "Entamoeba histolytica",
+      "type": "Parasite",
+      "description": "Amoebiasis",
+      "emoji": "🦠",
+      "color": "bg-amber-400/10 text-amber-400"
+    },
+    {
+      "id": 24,
+      "name": "Histoplasma capsulatum",
+      "type": "Fungus",
+      "description": "Histoplasmosis",
+      "emoji": "🍄",
+      "color": "bg-green-400/10 text-green-400"
+    },
+    {
+      "id": 25,
+      "name": "Marburg virus",
+      "type": "Virus",
+      "description": "Severe hemorrhagic fever",
+      "emoji": "🧬",
+      "color": "bg-zinc-500/10 text-zinc-500"
+    },
+    {
+      "id": 26,
+      "name": "Listeria monocytogenes",
+      "type": "Bacteria",
+      "description": "Listeriosis",
+      "emoji": "🦠",
+      "color": "bg-rose-400/10 text-rose-400"
+    },
+    {
+      "id": 27,
+      "name": "Balantidium coli",
+      "type": "Parasite",
+      "description": "Balantidiasis",
+      "emoji": "🦠",
+      "color": "bg-sky-400/10 text-sky-400"
+    },
+    {
+      "id": 28,
+      "name": "Coccidioides immitis",
+      "type": "Fungus",
+      "description": "Valley fever",
+      "emoji": "🍄",
+      "color": "bg-yellow-300/10 text-yellow-300"
+    },
+    {
+      "id": 29,
+      "name": "Hepatitis B virus",
+      "type": "Virus",
+      "description": "Liver infection",
+      "emoji": "🧬",
+      "color": "bg-amber-500/10 text-amber-500"
+    },
+    {
+      "id": 30,
+      "name": "Bacillus anthracis",
+      "type": "Bacteria",
+      "description": "Anthrax",
+      "emoji": "🧫",
+      "color": "bg-gray-400/10 text-gray-400"
+    },
+    {
+      "id": 31,
+      "name": "Taenia solium",
+      "type": "Parasite",
+      "description": "Tapeworm infection",
+      "emoji": "🪱",
+      "color": "bg-lime-400/10 text-lime-400"
+    },
+    {
+      "id": 32,
+      "name": "Trichophyton rubrum",
+      "type": "Fungus",
+      "description": "Athlete's foot",
+      "emoji": "🦶",
+      "color": "bg-orange-300/10 text-orange-300"
+    },
+    {
+      "id": 33,
+      "name": "Cytomegalovirus",
+      "type": "Virus",
+      "description": "Congenital infections",
+      "emoji": "🧬",
+      "color": "bg-violet-500/10 text-violet-500"
+    },
+    {
+      "id": 34,
+      "name": "Vibrio cholerae",
+      "type": "Bacteria",
+      "description": "Cholera",
+      "emoji": "💧",
+      "color": "bg-cyan-400/10 text-cyan-400"
+    },
+    {
+      "id": 35,
+      "name": "Naegleria fowleri",
+      "type": "Parasite",
+      "description": "Brain-eating amoeba",
+      "emoji": "🧠",
+      "color": "bg-fuchsia-500/10 text-fuchsia-500"
+    },
+    {
+      "id": 36,
+      "name": "Blastomyces dermatitidis",
+      "type": "Fungus",
+      "description": "Blastomycosis",
+      "emoji": "🍄",
+      "color": "bg-teal-400/10 text-teal-400"
+    },
+    {
+      "id": 37,
+      "name": "Dengue virus",
+      "type": "Virus",
+      "description": "Dengue fever",
+      "emoji": "🦟",
+      "color": "bg-red-300/10 text-red-300"
+    },
+    {
+      "id": 38,
+      "name": "Shigella dysenteriae",
+      "type": "Bacteria",
+      "description": "Bacterial dysentery",
+      "emoji": "💩",
+      "color": "bg-brown-400/10 text-brown-400"
+    },
+    {
+      "id": 39,
+      "name": "Leishmania donovani",
+      "type": "Parasite",
+      "description": "Kala-azar (Leishmaniasis)",
+      "emoji": "🦟",
+      "color": "bg-stone-400/10 text-stone-400"
+    },
+    {
+      "id": 40,
+      "name": "Microsporum canis",
+      "type": "Fungus",
+      "description": "Ringworm (Tinea)",
+      "emoji": "🐾",
+      "color": "bg-green-300/10 text-green-300"
+    },
+    {
+      "id": 41,
+      "name": "Mycobacterium tuberculosis",
+      "type": "Bacteria",
+      "description": "Tuberculosis",
+      "emoji": "🦠",
+      "color": "bg-red-600/10 text-red-600"
+    },
+    {
+      "id": 42,
+      "name": "Rabies virus",
+      "type": "Virus",
+      "description": "Rabies",
+      "emoji": "🧬",
+      "color": "bg-gray-700/10 text-gray-700"
+    },
+    {
+      "id": 43,
+      "name": "Giardia lamblia",
+      "type": "Parasite",
+      "description": "Giardiasis",
+      "emoji": "🦠",
+      "color": "bg-sky-500/10 text-sky-500"
+    },
+    {
+      "id": 44,
+      "name": "Aspergillus fumigatus",
+      "type": "Fungus",
+      "description": "Aspergillosis",
+      "emoji": "🍄",
+      "color": "bg-yellow-600/10 text-yellow-600"
+    },
+    {
+      "id": 45,
+      "name": "Human Immunodeficiency Virus (HIV)",
+      "type": "Virus",
+      "description": "AIDS",
+      "emoji": "🧬",
+      "color": "bg-pink-500/10 text-pink-500"
+    },
+    {
+      "id": 46,
+      "name": "Clostridium difficile",
+      "type": "Bacteria",
+      "description": "Antibiotic-associated diarrhea",
+      "emoji": "🦠",
+      "color": "bg-indigo-500/10 text-indigo-500"
+    },
+    {
+      "id": 47,
+      "name": "Trypanosoma brucei",
+      "type": "Parasite",
+      "description": "Sleeping sickness",
+      "emoji": "🦟",
+      "color": "bg-emerald-500/10 text-emerald-500"
+    },
+    {
+      "id": 48,
+      "name": "Cryptococcus neoformans",
+      "type": "Fungus",
+      "description": "Cryptococcosis",
+      "emoji": "🍄",
+      "color": "bg-purple-600/10 text-purple-600"
+    },
+    {
+      "id": 49,
+      "name": "Hantavirus",
+      "type": "Virus",
+      "description": "Hantavirus pulmonary syndrome",
+      "emoji": "🧬",
+      "color": "bg-green-700/10 text-green-700"
+    },
+    {
+      "id": 50,
+      "name": "Salmonella enterica",
+      "type": "Bacteria",
+      "description": "Salmonellosis",
+      "emoji": "🦠",
+      "color": "bg-orange-600/10 text-orange-600"
+    },
+    {
+      "id": 51,
+      "name": "Toxoplasma gondii",
+      "type": "Parasite",
+      "description": "Toxoplasmosis",
+      "emoji": "🐱",
+      "color": "bg-cyan-600/10 text-cyan-600"
+    },
+    {
+      "id": 52,
+      "name": "Pneumocystis jirovecii",
+      "type": "Fungus",
+      "description": "Pneumocystis pneumonia",
+      "emoji": "🍄",
+      "color": "bg-blue-700/10 text-blue-700"
+    },
+    {
+      "id": 53,
+      "name": "Zika virus",
+      "type": "Virus",
+      "description": "Zika fever",
+      "emoji": "🦟",
+      "color": "bg-pink-400/10 text-pink-400"
+    },
+    {
+      "id": 54,
+      "name": "Bordetella pertussis",
+      "type": "Bacteria",
+      "description": "Whooping cough",
+      "emoji": "🦠",
+      "color": "bg-indigo-700/10 text-indigo-700"
+    },
+    {
+      "id": 55,
+      "name": "Schistosoma mansoni",
+      "type": "Parasite",
+      "description": "Schistosomiasis",
+      "emoji": "🐛",
+      "color": "bg-lime-700/10 text-lime-700"
+    },
+    {
+      "id": 56,
+      "name": "Mucor spp.",
+      "type": "Fungus",
+      "description": "Mucormycosis",
+      "emoji": "🍄",
+      "color": "bg-gray-600/10 text-gray-600"
+    },
+    {
+      "id": 57,
+      "name": "Norovirus",
+      "type": "Virus",
+      "description": "Gastroenteritis",
+      "emoji": "🧬",
+      "color": "bg-yellow-700/10 text-yellow-700"
+    },
+    {
+      "id": 58,
+      "name": "Neisseria meningitidis",
+      "type": "Bacteria",
+      "description": "Meningitis",
+      "emoji": "🦠",
+      "color": "bg-blue-600/10 text-blue-600"
+    },
+    {
+      "id": 59,
+      "name": "Onchocerca volvulus",
+      "type": "Parasite",
+      "description": "River blindness",
+      "emoji": "🐛",
+      "color": "bg-emerald-700/10 text-emerald-700"
+    },
+    {
+      "id": 60,
+      "name": "Sporothrix schenckii",
+      "type": "Fungus",
+      "description": "Sporotrichosis",
+      "emoji": "🍄",
+      "color": "bg-red-400/10 text-red-400"
+    },
+    {
+      "id": 61,
+      "name": "Haemophilus influenzae",
+      "type": "Bacteria",
+      "description": "Respiratory infections",
+      "emoji": "🦠",
+      "color": "bg-teal-500/10 text-teal-500"
+    },
+    {
+      "id": 62,
+      "name": "Dengue virus",
+      "type": "Virus",
+      "description": "Dengue fever",
+      "emoji": "🦟",
+      "color": "bg-red-400/10 text-red-400"
+    },
+    {
+      "id": 63,
+      "name": "Entamoeba histolytica",
+      "type": "Parasite",
+      "description": "Amebiasis",
+      "emoji": "🦠",
+      "color": "bg-yellow-600/10 text-yellow-600"
+    },
+    {
+      "id": 64,
+      "name": "Histoplasma capsulatum",
+      "type": "Fungus",
+      "description": "Histoplasmosis",
+      "emoji": "🍄",
+      "color": "bg-orange-500/10 text-orange-500"
+    },
+    {
+      "id": 65,
+      "name": "Human papillomavirus (HPV)",
+      "type": "Virus",
+      "description": "Warts, cervical cancer",
+      "emoji": "🧬",
+      "color": "bg-purple-400/10 text-purple-400"
+    },
+    {
+      "id": 66,
+      "name": "Vibrio cholerae",
+      "type": "Bacteria",
+      "description": "Cholera",
+      "emoji": "🦠",
+      "color": "bg-blue-400/10 text-blue-400"
+    },
+    {
+      "id": 67,
+      "name": "Leishmania donovani",
+      "type": "Parasite",
+      "description": "Leishmaniasis",
+      "emoji": "🦟",
+      "color": "bg-pink-600/10 text-pink-600"
+    },
+    {
+      "id": 68,
+      "name": "Candida auris",
+      "type": "Fungus",
+      "description": "Drug-resistant yeast infection",
+      "emoji": "🍄",
+      "color": "bg-red-600/10 text-red-600"
+    },
+    {
+      "id": 69,
+      "name": "Ebola virus",
+      "type": "Virus",
+      "description": "Ebola hemorrhagic fever",
+      "emoji": "🧬",
+      "color": "bg-gray-800/10 text-gray-800"
+    },
+    {
+      "id": 70,
+      "name": "Campylobacter jejuni",
+      "type": "Bacteria",
+      "description": "Gastroenteritis",
+      "emoji": "🦠",
+      "color": "bg-amber-500/10 text-amber-500"
+    },
+    {
+      "id": 71,
+      "name": "Trichinella spiralis",
+      "type": "Parasite",
+      "description": "Trichinosis",
+      "emoji": "🐛",
+      "color": "bg-green-600/10 text-green-600"
+    },
+    {
+      "id": 72,
+      "name": "Coccidioides immitis",
+      "type": "Fungus",
+      "description": "Valley fever",
+      "emoji": "🍄",
+      "color": "bg-yellow-700/10 text-yellow-700"
+    },
+    {
+      "id": 73,
+      "name": "Rotavirus",
+      "type": "Virus",
+      "description": "Severe diarrhea in children",
+      "emoji": "🧬",
+      "color": "bg-cyan-600/10 text-cyan-600"
+    },
+    {
+      "id": 74,
+      "name": "Listeria monocytogenes",
+      "type": "Bacteria",
+      "description": "Listeriosis",
+      "emoji": "🦠",
+      "color": "bg-lime-600/10 text-lime-600"
+    },
+    {
+      "id": 75,
+      "name": "Babesia microti",
+      "type": "Parasite",
+      "description": "Babesiosis",
+      "emoji": "🦟",
+      "color": "bg-blue-700/10 text-blue-700"
+    },
+    {
+      "id": 76,
+      "name": "Rhizopus spp.",
+      "type": "Fungus",
+      "description": "Mucormycosis",
+      "emoji": "🍄",
+      "color": "bg-gray-700/10 text-gray-700"
+    },
+    {
+      "id": 77,
+      "name": "Measles virus",
+      "type": "Virus",
+      "description": "Measles",
+      "emoji": "🧬",
+      "color": "bg-red-500/10 text-red-500"
+    },
+    {
+      "id": 78,
+      "name": "Clostridium botulinum",
+      "type": "Bacteria",
+      "description": "Botulism",
+      "emoji": "🦠",
+      "color": "bg-yellow-500/10 text-yellow-500"
+    },
+    {
+      "id": 79,
+      "name": "Wuchereria bancrofti",
+      "type": "Parasite",
+      "description": "Lymphatic filariasis",
+      "emoji": "🐛",
+      "color": "bg-purple-500/10 text-purple-500"
+    },
+    {
+      "id": 80,
+      "name": "Blastomyces dermatitidis",
+      "type": "Fungus",
+      "description": "Blastomycosis",
+      "emoji": "🍄",
+      "color": "bg-green-500/10 text-green-500"
+    },
+    {
+      "id": 81,
+      "name": "Clostridium difficile",
+      "type": "Bacteria",
+      "description": "Antibiotic-associated diarrhea",
+      "emoji": "🦠",
+      "color": "bg-indigo-500/10 text-indigo-500"
+    },
+    {
+      "id": 82,
+      "name": "Human Immunodeficiency Virus (HIV)",
+      "type": "Virus",
+      "description": "AIDS",
+      "emoji": "🧬",
+      "color": "bg-pink-500/10 text-pink-500"
+    },
+    {
+      "id": 83,
+      "name": "Toxoplasma gondii",
+      "type": "Parasite",
+      "description": "Toxoplasmosis",
+      "emoji": "🐛",
+      "color": "bg-red-600/10 text-red-600"
+    },
+    {
+      "id": 84,
+      "name": "Aspergillus fumigatus",
+      "type": "Fungus",
+      "description": "Aspergillosis",
+      "emoji": "🍄",
+      "color": "bg-yellow-600/10 text-yellow-600"
+    },
+    {
+      "id": 85,
+      "name": "Norovirus",
+      "type": "Virus",
+      "description": "Gastroenteritis",
+      "emoji": "🧬",
+      "color": "bg-orange-400/10 text-orange-400"
+    },
+    {
+      "id": 86,
+      "name": "Bordetella pertussis",
+      "type": "Bacteria",
+      "description": "Whooping cough",
+      "emoji": "🦠",
+      "color": "bg-red-400/10 text-red-400"
+    },
+    {
+      "id": 87,
+      "name": "Trypanosoma brucei",
+      "type": "Parasite",
+      "description": "African sleeping sickness",
+      "emoji": "🐛",
+      "color": "bg-green-700/10 text-green-700"
+    },
+    {
+      "id": 88,
+      "name": "Cryptococcus neoformans",
+      "type": "Fungus",
+      "description": "Cryptococcosis",
+      "emoji": "🍄",
+      "color": "bg-blue-500/10 text-blue-500"
+    },
+    {
+      "id": 89,
+      "name": "Zika virus",
+      "type": "Virus",
+      "description": "Zika fever",
+      "emoji": "🦟",
+      "color": "bg-pink-400/10 text-pink-400"
+    },
+    {
+      "id": 90,
+      "name": "Helicobacter pylori",
+      "type": "Bacteria",
+      "description": "Stomach ulcers",
+      "emoji": "🦠",
+      "color": "bg-teal-600/10 text-teal-600"
+    },
+    {
+      "id": 91,
+      "name": "Schistosoma mansoni",
+      "type": "Parasite",
+      "description": "Schistosomiasis",
+      "emoji": "🐛",
+      "color": "bg-purple-600/10 text-purple-600"
+    },
+    {
+      "id": 92,
+      "name": "Pneumocystis jirovecii",
+      "type": "Fungus",
+      "description": "Pneumocystis pneumonia",
+      "emoji": "🍄",
+      "color": "bg-gray-500/10 text-gray-500"
+    },
+    {
+      "id": 93,
+      "name": "Rabies virus",
+      "type": "Virus",
+      "description": "Rabies",
+      "emoji": "🧬",
+      "color": "bg-red-700/10 text-red-700"
+    },
+    {
+      "id": 94,
+      "name": "Salmonella enterica",
+      "type": "Bacteria",
+      "description": "Salmonellosis",
+      "emoji": "🦠",
+      "color": "bg-yellow-500/10 text-yellow-500"
+    },
+    {
+      "id": 95,
+      "name": "Onchocerca volvulus",
+      "type": "Parasite",
+      "description": "River blindness",
+      "emoji": "🐛",
+      "color": "bg-blue-600/10 text-blue-600"
+    },
+    {
+      "id": 96,
+      "name": "Mucor spp.",
+      "type": "Fungus",
+      "description": "Mucormycosis",
+      "emoji": "🍄",
+      "color": "bg-red-700/10 text-red-700"
+    },
+    {
+      "id": 97,
+      "name": "Hepatitis B virus",
+      "type": "Virus",
+      "description": "Hepatitis B",
+      "emoji": "🧬",
+      "color": "bg-green-500/10 text-green-500"
+    },
+    {
+      "id": 98,
+      "name": "Clostridium tetani",
+      "type": "Bacteria",
+      "description": "Tetanus",
+      "emoji": "🦠",
+      "color": "bg-purple-500/10 text-purple-500"
+    },
+    {
+      "id": 99,
+      "name": "Taenia solium",
+      "type": "Parasite",
+      "description": "Pork tapeworm",
+      "emoji": "🐛",
+      "color": "bg-orange-600/10 text-orange-600"
+    },
+    {
+      "id": 100,
+      "name": "Malassezia furfur",
+      "type": "Fungus",
+      "description": "Skin infections",
+      "emoji": "🍄",
+      "color": "bg-yellow-400/10 text-yellow-400"
+    },
+    {
+      "id": 101,
+      "name": "Legionella pneumophila",
+      "type": "Bacteria",
+      "description": "Legionnaires' disease",
+      "emoji": "🦠",
+      "color": "bg-teal-500/10 text-teal-500"
+    },
+    {
+      "id": 102,
+      "name": "Dengue virus",
+      "type": "Virus",
+      "description": "Dengue fever",
+      "emoji": "🦟",
+      "color": "bg-red-400/10 text-red-400"
+    },
+    {
+      "id": 103,
+      "name": "Entamoeba histolytica",
+      "type": "Parasite",
+      "description": "Amoebiasis",
+      "emoji": "🐛",
+      "color": "bg-yellow-700/10 text-yellow-700"
+    },
+    {
+      "id": 104,
+      "name": "Histoplasma capsulatum",
+      "type": "Fungus",
+      "description": "Histoplasmosis",
+      "emoji": "🍄",
+      "color": "bg-purple-600/10 text-purple-600"
+    },
+    {
+      "id": 105,
+      "name": "Rhinovirus",
+      "type": "Virus",
+      "description": "Common cold",
+      "emoji": "🧬",
+      "color": "bg-green-400/10 text-green-400"
+    },
+    {
+      "id": 106,
+      "name": "Vibrio cholerae",
+      "type": "Bacteria",
+      "description": "Cholera",
+      "emoji": "🦠",
+      "color": "bg-blue-600/10 text-blue-600"
+    },
+    {
+      "id": 107,
+      "name": "Leishmania donovani",
+      "type": "Parasite",
+      "description": "Visceral leishmaniasis",
+      "emoji": "🐛",
+      "color": "bg-red-600/10 text-red-600"
+    },
+    {
+      "id": 108,
+      "name": "Blastomyces dermatitidis",
+      "type": "Fungus",
+      "description": "Blastomycosis",
+      "emoji": "🍄",
+      "color": "bg-indigo-500/10 text-indigo-500"
+    },
+    {
+      "id": 109,
+      "name": "Ebola virus",
+      "type": "Virus",
+      "description": "Ebola hemorrhagic fever",
+      "emoji": "🧬",
+      "color": "bg-red-700/10 text-red-700"
+    },
+    {
+      "id": 110,
+      "name": "Mycobacterium tuberculosis",
+      "type": "Bacteria",
+      "description": "Tuberculosis",
+      "emoji": "🦠",
+      "color": "bg-gray-700/10 text-gray-700"
+    },
+    {
+      "id": 111,
+      "name": "Trichomonas vaginalis",
+      "type": "Parasite",
+      "description": "Trichomoniasis",
+      "emoji": "🐛",
+      "color": "bg-pink-500/10 text-pink-500"
+    },
+    {
+      "id": 112,
+      "name": "Coccidioides immitis",
+      "type": "Fungus",
+      "description": "Valley fever",
+      "emoji": "🍄",
+      "color": "bg-yellow-600/10 text-yellow-600"
+    },
+    {
+      "id": 113,
+      "name": "Hantavirus",
+      "type": "Virus",
+      "description": "Hantavirus pulmonary syndrome",
+      "emoji": "🧬",
+      "color": "bg-green-700/10 text-green-700"
+    },
+    {
+      "id": 114,
+      "name": "Campylobacter jejuni",
+      "type": "Bacteria",
+      "description": "Gastroenteritis",
+      "emoji": "🦠",
+      "color": "bg-orange-600/10 text-orange-600"
+    },
+    {
+      "id": 115,
+      "name": "Fasciola hepatica",
+      "type": "Parasite",
+      "description": "Liver fluke infection",
+      "emoji": "🐛",
+      "color": "bg-teal-600/10 text-teal-600"
+    },
+    {
+      "id": 116,
+      "name": "Sporothrix schenckii",
+      "type": "Fungus",
+      "description": "Sporotrichosis",
+      "emoji": "🍄",
+      "color": "bg-purple-700/10 text-purple-700"
+    },
+    {
+      "id": 117,
+      "name": "Measles virus",
+      "type": "Virus",
+      "description": "Measles",
+      "emoji": "🧬",
+      "color": "bg-red-500/10 text-red-500"
+    },
+    {
+      "id": 118,
+      "name": "Neisseria gonorrhoeae",
+      "type": "Bacteria",
+      "description": "Gonorrhea",
+      "emoji": "🦠",
+      "color": "bg-pink-600/10 text-pink-600"
+    },
+    {
+      "id": 119,
+      "name": "Wuchereria bancrofti",
+      "type": "Parasite",
+      "description": "Lymphatic filariasis",
+      "emoji": "🐛",
+      "color": "bg-yellow-500/10 text-yellow-500"
+    },
+    {
+      "id": 120,
+      "name": "Trichophyton rubrum",
+      "type": "Fungus",
+      "description": "Athlete's foot",
+      "emoji": "🍄",
+      "color": "bg-green-600/10 text-green-600"
+    },
+    {
+      "id": 121,
+      "name": "Bacillus anthracis",
+      "type": "Bacteria",
+      "description": "Anthrax",
+      "emoji": "🦠",
+      "color": "bg-gray-600/10 text-gray-600"
+    },
+    {
+      "id": 122,
+      "name": "Rabies virus",
+      "type": "Virus",
+      "description": "Rabies",
+      "emoji": "🧬",
+      "color": "bg-red-800/10 text-red-800"
+    },
+    {
+      "id": 123,
+      "name": "Giardia lamblia",
+      "type": "Parasite",
+      "description": "Giardiasis",
+      "emoji": "🐛",
+      "color": "bg-blue-700/10 text-blue-700"
+    },
+    {
+      "id": 124,
+      "name": "Aspergillus fumigatus",
+      "type": "Fungus",
+      "description": "Aspergillosis",
+      "emoji": "🍄",
+      "color": "bg-yellow-700/10 text-yellow-700"
+    },
+    {
+      "id": 125,
+      "name": "Hepatitis B virus",
+      "type": "Virus",
+      "description": "Hepatitis B",
+      "emoji": "🧬",
+      "color": "bg-green-800/10 text-green-800"
+    },
+    {
+      "id": 126,
+      "name": "Clostridium difficile",
+      "type": "Bacteria",
+      "description": "Antibiotic-associated diarrhea",
+      "emoji": "🦠",
+      "color": "bg-orange-700/10 text-orange-700"
+    },
+    {
+      "id": 127,
+      "name": "Trypanosoma cruzi",
+      "type": "Parasite",
+      "description": "Chagas disease",
+      "emoji": "🐛",
+      "color": "bg-red-600/10 text-red-600"
+    },
+    {
+      "id": 128,
+      "name": "Cryptococcus neoformans",
+      "type": "Fungus",
+      "description": "Cryptococcosis",
+      "emoji": "🍄",
+      "color": "bg-purple-600/10 text-purple-600"
+    },
+    {
+      "id": 129,
+      "name": "Norovirus",
+      "type": "Virus",
+      "description": "Viral gastroenteritis",
+      "emoji": "🧬",
+      "color": "bg-pink-600/10 text-pink-600"
+    },
+    {
+      "id": 130,
+      "name": "Helicobacter pylori",
+      "type": "Bacteria",
+      "description": "Peptic ulcers",
+      "emoji": "🦠",
+      "color": "bg-green-600/10 text-green-600"
+    },
+    {
+      "id": 131,
+      "name": "Toxoplasma gondii",
+      "type": "Parasite",
+      "description": "Toxoplasmosis",
+      "emoji": "🐛",
+      "color": "bg-indigo-600/10 text-indigo-600"
+    },
+    {
+      "id": 132,
+      "name": "Mucor spp.",
+      "type": "Fungus",
+      "description": "Mucormycosis",
+      "emoji": "🍄",
+      "color": "bg-red-600/10 text-red-600"
+    },
+    {
+      "id": 133,
+      "name": "Human papillomavirus",
+      "type": "Virus",
+      "description": "HPV infection",
+      "emoji": "🧬",
+      "color": "bg-purple-700/10 text-purple-700"
+    },
+    {
+      "id": 134,
+      "name": "Shigella dysenteriae",
+      "type": "Bacteria",
+      "description": "Shigellosis",
+      "emoji": "🦠",
+      "color": "bg-yellow-800/10 text-yellow-800"
+    },
+    {
+      "id": 135,
+      "name": "Onchocerca volvulus",
+      "type": "Parasite",
+      "description": "River blindness",
+      "emoji": "🐛",
+      "color": "bg-blue-600/10 text-blue-600"
+    },
+    {
+      "id": 136,
+      "name": "Pneumocystis jirovecii",
+      "type": "Fungus",
+      "description": "Pneumocystis pneumonia",
+      "emoji": "🍄",
+      "color": "bg-teal-700/10 text-teal-700"
+    },
+    {
+      "id": 137,
+      "name": "Zika virus",
+      "type": "Virus",
+      "description": "Zika fever",
+      "emoji": "🦟",
+      "color": "bg-pink-500/10 text-pink-500"
+    },
+    {
+      "id": 138,
+      "name": "Bordetella pertussis",
+      "type": "Bacteria",
+      "description": "Whooping cough",
+      "emoji": "🦠",
+      "color": "bg-purple-500/10 text-purple-500"
+    },
+    {
+      "id": 139,
+      "name": "Taenia solium",
+      "type": "Parasite",
+      "description": "Pork tapeworm infection",
+      "emoji": "🐛",
+      "color": "bg-yellow-500/10 text-yellow-500"
+    },
+    {
+      "id": 140,
+      "name": "Fusarium spp.",
+      "type": "Fungus",
+      "description": "Fusariosis",
+      "emoji": "🍄",
+      "color": "bg-orange-500/10 text-orange-500"
+    },
+        {
+      "id": 141,
+      "name": "Legionella pneumophila",
+      "type": "Bacteria",
+      "description": "Legionnaires' disease",
+      "emoji": "🦠",
+      "color": "bg-blue-600/10 text-blue-600"
+    },
+    {
+      "id": 142,
+      "name": "Ebola virus",
+      "type": "Virus",
+      "description": "Ebola hemorrhagic fever",
+      "emoji": "🧬",
+      "color": "bg-red-700/10 text-red-700"
+    },
+    {
+      "id": 143,
+      "name": "Trichomonas vaginalis",
+      "type": "Parasite",
+      "description": "Trichomoniasis",
+      "emoji": "🐛",
+      "color": "bg-green-700/10 text-green-700"
+    },
+    {
+      "id": 144,
+      "name": "Histoplasma capsulatum",
+      "type": "Fungus",
+      "description": "Histoplasmosis",
+      "emoji": "🍄",
+      "color": "bg-orange-600/10 text-orange-600"
+    },
+    {
+      "id": 145,
+      "name": "Human immunodeficiency virus",
+      "type": "Virus",
+      "description": "HIV/AIDS",
+      "emoji": "🧬",
+      "color": "bg-pink-700/10 text-pink-700"
+    },
+    {
+      "id": 146,
+      "name": "Neisseria gonorrhoeae",
+      "type": "Bacteria",
+      "description": "Gonorrhea",
+      "emoji": "🦠",
+      "color": "bg-purple-600/10 text-purple-600"
+    },
+    {
+      "id": 147,
+      "name": "Leishmania donovani",
+      "type": "Parasite",
+      "description": "Leishmaniasis",
+      "emoji": "🐛",
+      "color": "bg-yellow-700/10 text-yellow-700"
+    },
+    {
+      "id": 148,
+      "name": "Blastomyces dermatitidis",
+      "type": "Fungus",
+      "description": "Blastomycosis",
+      "emoji": "🍄",
+      "color": "bg-teal-600/10 text-teal-600"
+    },
+    {
+      "id": 149,
+      "name": "Hantavirus",
+      "type": "Virus",
+      "description": "Hantavirus pulmonary syndrome",
+      "emoji": "🧬",
+      "color": "bg-green-600/10 text-green-600"
+    },
+    {
+      "id": 150,
+      "name": "Vibrio cholerae",
+      "type": "Bacteria",
+      "description": "Cholera",
+      "emoji": "🦠",
+      "color": "bg-blue-700/10 text-blue-700"
+    },
+    {
+      "id": 151,
+      "name": "Entamoeba histolytica",
+      "type": "Parasite",
+      "description": "Amoebiasis",
+      "emoji": "🐛",
+      "color": "bg-red-700/10 text-red-700"
+    },
+    {
+      "id": 152,
+      "name": "Coccidioides immitis",
+      "type": "Fungus",
+      "description": "Valley fever",
+      "emoji": "🍄",
+      "color": "bg-yellow-600/10 text-yellow-600"
+    },
+    {
+      "id": 153,
+      "name": "Human herpesvirus 1",
+      "type": "Virus",
+      "description": "Oral herpes",
+      "emoji": "🧬",
+      "color": "bg-red-600/10 text-red-600"
+    },
+    {
+      "id": 154,
+      "name": "Salmonella enterica",
+      "type": "Bacteria",
+      "description": "Salmonellosis",
+      "emoji": "🦠",
+      "color": "bg-orange-600/10 text-orange-600"
+    },
+    {
+      "id": 155,
+      "name": "Onchocerca volvulus",
+      "type": "Parasite",
+      "description": "River blindness",
+      "emoji": "🐛",
+      "color": "bg-indigo-700/10 text-indigo-700"
+    },
+    {
+      "id": 156,
+      "name": "Sporothrix schenckii",
+      "type": "Fungus",
+      "description": "Sporotrichosis",
+      "emoji": "🍄",
+      "color": "bg-green-600/10 text-green-600"
+    },
+    {
+      "id": 157,
+      "name": "Measles virus",
+      "type": "Virus",
+      "description": "Measles",
+      "emoji": "🧬",
+      "color": "bg-purple-600/10 text-purple-600"
+    },
+    {
+      "id": 158,
+      "name": "Clostridium botulinum",
+      "type": "Bacteria",
+      "description": "Botulism",
+      "emoji": "🦠",
+      "color": "bg-red-700/10 text-red-700"
+    },
+    {
+      "id": 159,
+      "name": "Wuchereria bancrofti",
+      "type": "Parasite",
+      "description": "Lymphatic filariasis",
+      "emoji": "🐛",
+      "color": "bg-blue-600/10 text-blue-600"
+    },
+    {
+      "id": 160,
+      "name": "Trichophyton rubrum",
+      "type": "Fungus",
+      "description": "Ringworm",
+      "emoji": "🍄",
+      "color": "bg-yellow-500/10 text-yellow-500"
     }
   ]
-} 
+}
