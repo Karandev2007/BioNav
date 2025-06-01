@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { UserButton, SignOutButton } from "@clerk/nextjs";
@@ -58,7 +59,14 @@ export function Sidebar() {
     <div className="flex h-full w-full flex-col space-y-4 bg-card py-4">
       <div className="flex items-center justify-between px-3 py-2">
         <Link href="/dashboard" className="flex items-center gap-2 pl-3">
-          <span className="text-2xl">🧬</span>
+          <div className="relative h-8 w-8">
+            <Image
+              src="/logo.png"
+              alt="BioNav Logo"
+              fill
+              className="object-contain"
+            />
+          </div>
           <h1 className="text-xl font-bold text-primary">BioNav</h1>
         </Link>
         <UserButton afterSignOutUrl="/" />

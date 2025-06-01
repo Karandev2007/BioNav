@@ -1,51 +1,21 @@
-import { Search } from "lucide-react";
+"use client";
 
-const pathogens = [
-  {
-    name: "Escherichia coli",
-    type: "Bacteria",
-    description: "Food poisoning, UTIs",
-    emoji: "🦠",
-    color: "bg-red-500/10 text-red-500",
-  },
-  {
-    name: "Influenza A",
-    type: "Virus",
-    description: "Respiratory infection",
-    emoji: "🦠",
-    color: "bg-yellow-500/10 text-yellow-500",
-  },
-  {
-    name: "Plasmodium falciparum",
-    type: "Parasite",
-    description: "Malaria",
-    emoji: "🦟",
-    color: "bg-purple-500/10 text-purple-500",
-  },
-  {
-    name: "Candida albicans",
-    type: "Fungus",
-    description: "Yeast infections",
-    emoji: "🍄",
-    color: "bg-green-500/10 text-green-500",
-  },
-  {
-    name: "SARS-CoV-2",
-    type: "Virus",
-    description: "COVID-19",
-    emoji: "🦠",
-    color: "bg-blue-500/10 text-blue-500",
-  },
-  {
-    name: "Staphylococcus aureus",
-    type: "Bacteria",
-    description: "Skin infections",
-    emoji: "🦠",
-    color: "bg-orange-500/10 text-orange-500",
-  },
-];
+import { useState } from "react";
+import { Search } from "lucide-react";
+import pathogens from "@/data/pathogens.json";
 
 export default function PathogensPage() {
+  const [search, setSearch] = useState("");
+  const [type, setType] = useState("all");
+
+  const filteredPathogens = pathogens.pathogens.filter((pathogen) => {
+    const matchesSearch = 
+      pathogen.name.toLowerCase().includes(search.toLowerCase()) ||
+      pathogen.description.toLowerCase().includes(search.toLowerCase());
+    const matchesType = type === "all" || pathogen.type.toLowerCase() === type.toLowerCase();
+    return matchesSearch && matchesType;
+  });
+
   return (
     <div className="container mx-auto p-6">
       <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
@@ -55,20 +25,35 @@ export default function PathogensPage() {
             Learn about different disease-causing organisms
           </p>
         </div>
-        <div className="relative">
-          <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
-          <input
-            type="text"
-            placeholder="Search pathogens..."
-            className="w-full rounded-lg border bg-card px-9 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
-          />
+        <div className="flex gap-4">
+          <div className="relative">
+            <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+            <input
+              type="text"
+              placeholder="Search pathogens..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              className="w-full rounded-lg border bg-card px-9 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+            />
+          </div>
+          <select
+            value={type}
+            onChange={(e) => setType(e.target.value)}
+            className="rounded-lg border bg-card px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+          >
+            <option value="all">All Types</option>
+            <option value="bacteria">Bacteria</option>
+            <option value="virus">Virus</option>
+            <option value="parasite">Parasite</option>
+            <option value="fungus">Fungus</option>
+          </select>
         </div>
       </div>
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {pathogens.map((pathogen) => (
+        {filteredPathogens.map((pathogen) => (
           <div
-            key={pathogen.name}
+            key={pathogen.id}
             className="group relative overflow-hidden rounded-lg border bg-card p-6 transition-all hover:border-primary"
           >
             <div className="mb-4 flex items-center justify-between">

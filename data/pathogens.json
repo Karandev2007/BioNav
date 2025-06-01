@@ -1,87 +1,52 @@
 {
   "pathogens": [
     {
-      "id": "influenza-a",
-      "name": "Influenza A Virus",
-      "type": "Virus",
-      "description": "A highly contagious respiratory virus that causes seasonal flu epidemics.",
-      "symptoms": [
-        "Fever",
-        "Cough",
-        "Fatigue",
-        "Body aches",
-        "Headache"
-      ],
-      "transmission": "Airborne droplets, close contact",
-      "prevention": [
-        "Annual vaccination",
-        "Hand hygiene",
-        "Respiratory etiquette"
-      ],
-      "severity": "Moderate to High",
-      "treatment": "Antiviral medications, supportive care"
-    },
-    {
-      "id": "e-coli",
+      "id": 1,
       "name": "Escherichia coli",
       "type": "Bacteria",
-      "description": "A bacterium commonly found in the intestines, some strains can cause severe illness.",
-      "symptoms": [
-        "Diarrhea",
-        "Abdominal cramps",
-        "Nausea",
-        "Vomiting",
-        "Fever"
-      ],
-      "transmission": "Contaminated food or water",
-      "prevention": [
-        "Food safety practices",
-        "Hand washing",
-        "Clean water"
-      ],
-      "severity": "Mild to Severe",
-      "treatment": "Antibiotics (in severe cases), hydration"
+      "description": "Food poisoning, UTIs",
+      "emoji": "🦠",
+      "color": "bg-red-500/10 text-red-500"
     },
     {
-      "id": "p-falciparum",
+      "id": 2,
+      "name": "Influenza A",
+      "type": "Virus",
+      "description": "Respiratory infection",
+      "emoji": "🦠",
+      "color": "bg-yellow-500/10 text-yellow-500"
+    },
+    {
+      "id": 3,
       "name": "Plasmodium falciparum",
-      "type": "Protozoa",
-      "description": "A parasitic protozoan that causes malaria, transmitted by mosquitoes.",
-      "symptoms": [
-        "High fever",
-        "Chills",
-        "Sweating",
-        "Headache",
-        "Muscle pain"
-      ],
-      "transmission": "Mosquito bites",
-      "prevention": [
-        "Mosquito nets",
-        "Insect repellent",
-        "Antimalarial drugs"
-      ],
-      "severity": "High",
-      "treatment": "Antimalarial medications"
+      "type": "Parasite",
+      "description": "Malaria",
+      "emoji": "🦟",
+      "color": "bg-purple-500/10 text-purple-500"
     },
     {
-      "id": "c-albicans",
+      "id": 4,
       "name": "Candida albicans",
       "type": "Fungus",
-      "description": "A fungal species that can cause opportunistic infections in humans.",
-      "symptoms": [
-        "White patches",
-        "Redness",
-        "Itching",
-        "Burning sensation"
-      ],
-      "transmission": "Direct contact, compromised immunity",
-      "prevention": [
-        "Good hygiene",
-        "Balanced diet",
-        "Immune system support"
-      ],
-      "severity": "Mild to Moderate",
-      "treatment": "Antifungal medications"
+      "description": "Yeast infections",
+      "emoji": "🍄",
+      "color": "bg-green-500/10 text-green-500"
+    },
+    {
+      "id": 5,
+      "name": "SARS-CoV-2",
+      "type": "Virus",
+      "description": "COVID-19",
+      "emoji": "🦠",
+      "color": "bg-blue-500/10 text-blue-500"
+    },
+    {
+      "id": 6,
+      "name": "Staphylococcus aureus",
+      "type": "Bacteria",
+      "description": "Skin infections",
+      "emoji": "🦠",
+      "color": "bg-orange-500/10 text-orange-500"
     }
   ]
 } 

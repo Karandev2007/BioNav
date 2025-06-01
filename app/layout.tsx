@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Inter } from "next/font/google";
@@ -5,9 +6,14 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "BioNav - Your Biology Learning Platform",
-  description: "Learn biology concepts, study pathogens, and more with BioNav",
+export const metadata: Metadata = {
+  title: "BioNav - Your Biology Learning Journey",
+  description: "Explore biology concepts, study pathogens, create flashcards, and chat with our AI tutor.",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
@@ -14,8 +15,18 @@ export default function HomePage() {
 
         {/* content */}
         <div className="mx-auto max-w-2xl text-center">
-          <div className="mb-8 inline-flex rounded-full px-3 py-1 text-sm leading-6 text-muted-foreground ring-1 ring-border/10 hover:ring-border/20">
-            Welcome to BioNav 🧬
+          <div className="mb-8 flex flex-col items-center gap-4">
+            <div className="relative h-16 w-16">
+              <Image
+                src="/logo.png"
+                alt="BioNav Logo"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <div className="inline-flex rounded-full px-3 py-1 text-sm leading-6 text-muted-foreground ring-1 ring-border/10 hover:ring-border/20">
+              Welcome to BioNav
+            </div>
           </div>
           <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl">
             Your Biology Learning Journey Starts Here
