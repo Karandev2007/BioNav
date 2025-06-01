@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { UserButton, SignOutButton } from "@clerk/nextjs";
+import { SignOutButton } from "@clerk/nextjs";
 
 const routes = [
   {
@@ -42,22 +42,24 @@ const routes = [
     icon: "👤",
     href: "/profile",
     color: "text-gray-500",
-  },
-  {
-    label: "Settings",
-    icon: "⚙️",
-    href: "/settings",
-    color: "text-gray-500",
-  },
+  }
 ];
 
 export function Sidebar() {
   const pathname = usePathname();
   const router = useRouter();
 
+  const handleSignOut = async () => {
+    try {
+      await router.push("/");
+    } catch (error) {
+      console.error("Error during sign out:", error);
+    }
+  };
+
   return (
     <div className="flex h-full w-full flex-col space-y-4 bg-card py-4">
-      <div className="flex items-center justify-between px-3 py-2">
+      <div className="flex items-center px-3 py-2">
         <Link href="/dashboard" className="flex items-center gap-2 pl-3">
           <div className="relative h-8 w-8">
             <Image
@@ -69,7 +71,6 @@ export function Sidebar() {
           </div>
           <h1 className="text-xl font-bold text-primary">BioNav</h1>
         </Link>
-        <UserButton afterSignOutUrl="/" />
       </div>
       <div className="flex-1 space-y-1 px-3">
         {routes.map((route) => (
@@ -87,11 +88,14 @@ export function Sidebar() {
             {route.label}
           </Link>
         ))}
-        <SignOutButton signOutCallback={() => router.push("/")}>
-          <button className="flex w-full items-center gap-x-3 rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground">
+        <SignOutButton>
+          <Link 
+            href="/"
+            className="flex w-full items-center gap-x-3 rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+          >
             <span className="text-xl">🚪</span>
             Logout
-          </button>
+          </Link>
         </SignOutButton>
       </div>
       <div className="px-3 py-2">
