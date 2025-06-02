@@ -38,7 +38,7 @@ export default function HomePage() {
           {/* login button */}
           <div className="mt-10">
             <a
-              href="https://accounts.bionav.qeintech.in/sign-in"
+              href="https://accounts.auth.bionav.qeintech.in/sign-in"
               className="rounded-md bg-primary px-6 py-3 text-lg font-semibold text-primary-foreground shadow-sm hover:bg-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
               Login to Get Started
