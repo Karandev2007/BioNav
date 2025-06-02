@@ -6,7 +6,7 @@ export default authMiddleware({
   afterAuth(auth, req) {
     // handle users who aren't authenticated
     if (!auth.userId && !auth.isPublicRoute) {
-      const signInUrl = new URL("https://in-tapir-82.accounts.dev/sign-in");
+      const signInUrl = new URL("https://accounts.bionav.qeintech.in/sign-in");
       signInUrl.searchParams.set("redirect_url", req.url);
       return Response.redirect(signInUrl);
     }
