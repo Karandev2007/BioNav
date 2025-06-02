@@ -10,6 +10,11 @@ export default authMiddleware({
       signInUrl.searchParams.set("redirect_url", req.url);
       return Response.redirect(signInUrl);
     }
+
+    // redirect them to dashboard if they're signed in and trying to access public routes
+    if (auth.userId && auth.isPublicRoute) {
+      return Response.redirect(new URL("/dashboard", req.url));
+    }
   }
 });
 
