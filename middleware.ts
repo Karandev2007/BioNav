@@ -2,27 +2,27 @@ import { authMiddleware } from "@clerk/nextjs";
 
 export default authMiddleware({
   publicRoutes: ["/"],
-  ignoredRoutes: ["/api/public"],
   afterAuth(auth, req) {
-    const isAuthPage = req.url.includes('/sign-in') || req.url.includes('/sign-up');
-    
-    // If the user is signed in and trying to access auth pages, redirect to dashboard
-    if (auth.userId && isAuthPage) {
-      return Response.redirect(new URL('/dashboard', req.url));
+    // get the current URL and pathname
+    const url = new URL(req.url);
+    const isHomePage = url.pathname === "/";
+    const isAuthPage = url.pathname.includes("/sign-in") || url.pathname.includes("/sign-up");
+
+    // if user is signed in and on home, redirect to dashboard
+    if (auth.userId && (isHomePage || isAuthPage)) {
+      const dashboardUrl = new URL("/dashboard", req.url);
+      return Response.redirect(dashboardUrl);
     }
-    
-    // If the user is not signed in and trying to access protected pages
-    if (!auth.userId && !auth.isPublicRoute) {
-      // Construct the URL for your dashboard
-      const dashboardUrl = new URL('/dashboard', req.url).toString();
-      // Redirect to the Clerk-hosted sign-in page
-      const signInUrl = new URL('https://accounts.bionav.qeintech.in/sign-in');
-      signInUrl.searchParams.set('redirect_url', dashboardUrl);
+
+    // If user is not signed in and trying to access protected routes
+    if (!auth.userId && !isHomePage) {
+      const signInUrl = new URL("/sign-in", "https://accounts.bionav.qeintech.in");
+      signInUrl.searchParams.set("redirect_url", "https://bionav.qeintech.in/dashboard");
       return Response.redirect(signInUrl);
     }
-  },
+  }
 });
 
 export const config = {
-  matcher: ['/(?!.+\\.[\\w]+$|_next)/', '/', '/(api|trpc)(.*)'],
+  matcher: ["/((?!.*\\..*|_next).*)", "/", "/(api|trpc)(.*)"],
 }; 
