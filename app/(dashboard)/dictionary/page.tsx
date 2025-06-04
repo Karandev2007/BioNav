@@ -2,10 +2,16 @@
 
 import { useState } from "react";
 import terms from "@/data/biology-terms.json";
+import AIExplanationDialog from "@/components/AIExplanationDialog";
+import { Sparkles } from "lucide-react";
 
 export default function DictionaryPage() {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("all");
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [selectedTopic, setSelectedTopic] = useState("");
+  const [explanation, setExplanation] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const filteredTerms = terms.terms.filter((term) => {
     const matchesSearch = term.term.toLowerCase().includes(search.toLowerCase()) ||
@@ -13,6 +19,34 @@ export default function DictionaryPage() {
     const matchesCategory = category === "all" || term.category.toLowerCase() === category.toLowerCase();
     return matchesSearch && matchesCategory;
   });
+
+  const handleGetAIExplanation = async (topic: string) => {
+    setSelectedTopic(topic);
+    setIsDialogOpen(true);
+    setIsLoading(true);
+
+    try {
+      const response = await fetch("/api/ai-explanation", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ topic }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to get explanation");
+      }
+
+      const data = await response.json();
+      setExplanation(data.explanation);
+    } catch (error) {
+      console.error("Error getting AI explanation:", error);
+      setExplanation("Sorry, there was an error generating the explanation. Please try again.");
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   return (
     <div className="container mx-auto max-w-4xl space-y-4 p-6">
@@ -64,14 +98,23 @@ export default function DictionaryPage() {
               ))}
             </div>
             <button
-              className="mt-3 text-sm text-primary hover:underline"
-              onClick={() => {/* add AI explanation later */}}
+              className="mt-3 inline-flex items-center gap-1.5 text-sm text-primary hover:underline"
+              onClick={() => handleGetAIExplanation(term.term)}
             >
+              <Sparkles className="h-4 w-4" />
               Get AI Explanation
             </button>
           </div>
         ))}
       </div>
+
+      <AIExplanationDialog
+        isOpen={isDialogOpen}
+        onClose={() => setIsDialogOpen(false)}
+        topic={selectedTopic}
+        explanation={explanation}
+        isLoading={isLoading}
+      />
     </div>
   );
 } 
