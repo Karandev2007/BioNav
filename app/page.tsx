@@ -79,27 +79,29 @@ export default function HomePage() {
       </header>
 
       {/* hero section */}
-      <section className="relative pt-40 pb-24">
-        <div className="absolute inset-0 -z-10">
-          <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
-          <div className="absolute left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#80ffea] to-[#8aff80] opacity-20 animate-pulse" />
+      <section className="relative min-h-screen flex items-center justify-center">
+        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background via-background/95 to-background/90">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />
         </div>
         <div className="container mx-auto px-4 text-center">
-          <h1 className="mx-auto max-w-4xl text-4xl font-bold tracking-tight sm:text-6xl">
-            Navigate Biology with AI-Powered Tools
+          <h1 className="mx-auto max-w-4xl text-4xl font-bold tracking-tight sm:text-6xl bg-gradient-to-b from-white to-gray-400 bg-clip-text text-transparent pb-2">
+            Your Biology Learning Journey Starts Here
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
-            Study smarter with fast, modern, and focused tools for biology learners.
+            Explore biology concepts, study pathogens, create flashcards, and chat with our AI tutor.
           </p>
           <div className="mt-10 flex justify-center gap-4">
             <a
               href="https://accounts.bionav.qeintech.in/sign-in"
-              className="group inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-lg font-semibold text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-lg hover:scale-105"
+              className="group inline-flex items-center gap-2 rounded-full bg-primary/90 px-6 py-3 text-lg font-semibold text-primary-foreground transition-all hover:bg-primary hover:shadow-[0_0_15px_rgba(0,0,0,0.2)] hover:scale-105"
             >
               Try BioNav
               <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
             </a>
           </div>
+          <p className="mt-6 text-sm text-muted-foreground">
+            Made with ❤️ by Karan
+          </p>
         </div>
       </section>
 
