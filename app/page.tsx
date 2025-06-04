@@ -80,21 +80,13 @@ export default function HomePage() {
 
       {/* hero section */}
       <section className="relative min-h-screen flex items-center justify-center pt-20">
-        <div className="absolute inset-0 -z-10 overflow-hidden">
-          <div className="absolute inset-0 bg-[#020817]" />
-          
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(56,189,248,0.06)_0%,rgba(0,0,0,0)_65%)]" />
-          
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_60%_50%,rgba(14,165,233,0.08),rgba(3,7,18,0)_60%)]" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_40%_50%,rgba(20,184,166,0.08),rgba(3,7,18,0)_60%)]" />
-          
-          <div className="absolute inset-0 opacity-[0.015] [background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PC9maWx0ZXI+PHJlY3Qgd2lkdGg9IjMwMCIgaGVpZ2h0PSIzMDAiIGZpbHRlcj0idXJsKCNhKSIgb3BhY2l0eT0iMC41Ii8+PC9zdmc+')]" />
-
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#020817]/80" />
+        <div className="absolute inset-0 -z-10">
+          <div className="absolute inset-0 bg-[#0a192f]/90 backdrop-blur-[100px]" />
+          <div className="absolute inset-0 bg-gradient-to-t from-background/10 via-cyan-900/10 to-transparent opacity-60" />
+          <div className="absolute h-full w-full bg-[radial-gradient(ellipse_at_center,rgba(14,159,133,0.15),transparent)]" />
         </div>
-
         <div className="container mx-auto px-4 text-center mt-20">
-          <h1 className="mx-auto max-w-4xl text-4xl font-bold tracking-tight sm:text-6xl text-white/95">
+          <h1 className="mx-auto max-w-4xl text-4xl font-bold tracking-tight sm:text-6xl text-white/90">
             Your Biology Learning
             <br />
             Journey Starts Here
@@ -107,7 +99,7 @@ export default function HomePage() {
           <div className="mt-10 flex justify-center gap-4">
             <a
               href="https://accounts.bionav.qeintech.in/sign-in"
-              className="group inline-flex items-center gap-2 rounded-full bg-sky-500/90 px-6 py-3 text-lg font-semibold text-white transition-all hover:bg-sky-500 hover:shadow-[0_0_30px_rgba(56,189,248,0.3)] hover:scale-105"
+              className="group inline-flex items-center gap-2 rounded-full bg-primary/90 px-6 py-3 text-lg font-semibold text-primary-foreground transition-all hover:bg-primary hover:shadow-[0_0_15px_rgba(0,0,0,0.2)] hover:scale-105"
             >
               Try BioNav
               <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
@@ -263,7 +255,7 @@ export default function HomePage() {
             <p className="mt-2 text-sm font-bold text-primary">
               Made with ❤️ by Karan
             </p>
-          </div>
+        </div>
         </div>
       </footer>
     </div>
