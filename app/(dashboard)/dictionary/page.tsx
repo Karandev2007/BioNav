@@ -34,24 +34,22 @@ export default function DictionaryPage() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ topic }),
+        cache: 'no-store',
       });
 
       const data = await response.json();
 
       if (!response.ok) {
-        throw new Error(data.error || "Failed to get explanation");
-      }
-
-      if (!data.explanation) {
-        throw new Error("No explanation received");
+        throw new Error(data.error || `Error: ${response.status}`);
       }
 
       setExplanation(data.explanation);
     } catch (error) {
-      console.error("Error getting AI explanation:", error);
       const errorMessage = error instanceof Error ? error.message : "Failed to generate explanation";
+      console.error("Error getting AI explanation:", errorMessage);
       toast.error(errorMessage);
-      setExplanation("Sorry, there was an error generating the explanation. Please try again.");
+      setExplanation("An error occurred while generating the explanation. Please try again.");
+      // keep the dialog open to show the error message
     } finally {
       setIsLoading(false);
     }
