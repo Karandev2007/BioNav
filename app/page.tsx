@@ -79,16 +79,22 @@ export default function HomePage() {
       </header>
 
       {/* hero section */}
-      <section className="relative min-h-screen flex items-center justify-center">
-        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background via-background/95 to-background/90">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />
+      <section className="relative min-h-screen flex items-center justify-center pt-20">
+        <div className="absolute inset-0 -z-10">
+          <div className="absolute inset-0 bg-[#0a192f]/90 backdrop-blur-[100px]" />
+          <div className="absolute inset-0 bg-gradient-to-t from-background/10 via-cyan-900/10 to-transparent opacity-60" />
+          <div className="absolute h-full w-full bg-[radial-gradient(ellipse_at_center,rgba(14,159,133,0.15),transparent)]" />
         </div>
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="mx-auto max-w-4xl text-4xl font-bold tracking-tight sm:text-6xl bg-gradient-to-b from-white to-gray-400 bg-clip-text text-transparent pb-2">
-            Your Biology Learning Journey Starts Here
+        <div className="container mx-auto px-4 text-center mt-20">
+          <h1 className="mx-auto max-w-4xl text-4xl font-bold tracking-tight sm:text-6xl text-white/90">
+            Your Biology Learning
+            <br />
+            Journey Starts Here
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
-            Explore biology concepts, study pathogens, create flashcards, and chat with our AI tutor.
+          <p className="mx-auto mt-6 max-w-2xl text-base text-gray-400/90">
+            Explore biology concepts, study pathogens, create flashcards, and chat with
+            <br />
+            our AI tutor.
           </p>
           <div className="mt-10 flex justify-center gap-4">
             <a
@@ -99,7 +105,7 @@ export default function HomePage() {
               <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
             </a>
           </div>
-          <p className="mt-6 text-sm text-muted-foreground">
+          <p className="mt-8 text-sm text-gray-500">
             Made with ❤️ by Karan
           </p>
         </div>
