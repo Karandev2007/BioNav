@@ -1,6 +1,14 @@
 import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
+  if (!process.env.GROQ_API_KEY || !process.env.GROQ_API_URL) {
+    console.error("Missing GROQ API configuration");
+    return NextResponse.json(
+      { error: "API configuration missing" },
+      { status: 500 }
+    );
+  }
+
   try {
     const { topic } = await req.json();
 
@@ -11,7 +19,9 @@ export async function POST(req: Request) {
       );
     }
 
-    const response = await fetch(process.env.GROQ_API_URL!, {
+    console.log("Sending request to Groq API for topic:", topic);
+
+    const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${process.env.GROQ_API_KEY}`,
@@ -35,17 +45,30 @@ export async function POST(req: Request) {
     });
 
     if (!response.ok) {
-      throw new Error(`Groq API error: ${response.statusText}`);
+      const errorData = await response.text();
+      console.error("Groq API error:", {
+        status: response.status,
+        statusText: response.statusText,
+        error: errorData
+      });
+      throw new Error(`Groq API error: ${response.status} ${response.statusText}`);
     }
 
     const data = await response.json();
-    const explanation = data.choices[0]?.message?.content || "No explanation available.";
+    
+    if (!data.choices?.[0]?.message?.content) {
+      console.error("Unexpected API response format:", data);
+      throw new Error("Invalid API response format");
+    }
+
+    const explanation = data.choices[0].message.content;
+    console.log("Successfully generated explanation for topic:", topic);
 
     return NextResponse.json({ explanation });
   } catch (error) {
     console.error("AI Explanation error:", error);
     return NextResponse.json(
-      { error: "Failed to generate explanation" },
+      { error: "Failed to generate explanation. Please try again." },
       { status: 500 }
     );
   }

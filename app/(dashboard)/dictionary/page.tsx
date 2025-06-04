@@ -4,6 +4,7 @@ import { useState } from "react";
 import terms from "@/data/biology-terms.json";
 import AIExplanationDialog from "@/components/AIExplanationDialog";
 import { Sparkles } from "lucide-react";
+import { toast } from "sonner";
 
 export default function DictionaryPage() {
   const [search, setSearch] = useState("");
@@ -24,6 +25,7 @@ export default function DictionaryPage() {
     setSelectedTopic(topic);
     setIsDialogOpen(true);
     setIsLoading(true);
+    setExplanation(""); // Clear previous explanation
 
     try {
       const response = await fetch("/api/ai-explanation", {
@@ -34,14 +36,21 @@ export default function DictionaryPage() {
         body: JSON.stringify({ topic }),
       });
 
+      const data = await response.json();
+
       if (!response.ok) {
-        throw new Error("Failed to get explanation");
+        throw new Error(data.error || "Failed to get explanation");
       }
 
-      const data = await response.json();
+      if (!data.explanation) {
+        throw new Error("No explanation received");
+      }
+
       setExplanation(data.explanation);
     } catch (error) {
       console.error("Error getting AI explanation:", error);
+      const errorMessage = error instanceof Error ? error.message : "Failed to generate explanation";
+      toast.error(errorMessage);
       setExplanation("Sorry, there was an error generating the explanation. Please try again.");
     } finally {
       setIsLoading(false);
@@ -98,11 +107,12 @@ export default function DictionaryPage() {
               ))}
             </div>
             <button
-              className="mt-3 inline-flex items-center gap-1.5 text-sm text-primary hover:underline"
+              className="mt-3 inline-flex items-center gap-1.5 text-sm text-primary hover:underline disabled:opacity-50 disabled:cursor-not-allowed"
               onClick={() => handleGetAIExplanation(term.term)}
+              disabled={isLoading}
             >
               <Sparkles className="h-4 w-4" />
-              Get AI Explanation
+              {isLoading ? "Generating..." : "Get AI Explanation"}
             </button>
           </div>
         ))}
@@ -110,7 +120,10 @@ export default function DictionaryPage() {
 
       <AIExplanationDialog
         isOpen={isDialogOpen}
-        onClose={() => setIsDialogOpen(false)}
+        onClose={() => {
+          setIsDialogOpen(false);
+          setExplanation("");
+        }}
         topic={selectedTopic}
         explanation={explanation}
         isLoading={isLoading}
