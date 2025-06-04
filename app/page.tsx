@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Monitor, Sparkles } from "lucide-react";
+import ParticlesBackground from "@/components/ParticlesBackground";
 
 const features = [
   {
@@ -79,35 +80,49 @@ export default function HomePage() {
       </header>
 
       {/* hero section */}
-      <section className="relative min-h-screen flex items-center justify-center pt-20">
-        <div className="absolute inset-0 -z-10">
-          <div className="absolute inset-0 bg-[#0a192f]/90 backdrop-blur-[100px]" />
-          <div className="absolute inset-0 bg-gradient-to-t from-background/10 via-cyan-900/10 to-transparent opacity-60" />
-          <div className="absolute h-full w-full bg-[radial-gradient(ellipse_at_center,rgba(14,159,133,0.15),transparent)]" />
-        </div>
-        <div className="container mx-auto px-4 text-center mt-20">
-          <h1 className="mx-auto max-w-4xl text-4xl font-bold tracking-tight sm:text-6xl text-white/90">
-            Your Biology Learning
-            <br />
-            Journey Starts Here
-          </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-base text-gray-400/90">
-            Explore biology concepts, study pathogens, create flashcards, and chat with
-            <br />
-            our AI tutor.
-          </p>
-          <div className="mt-10 flex justify-center gap-4">
-            <a
-              href="https://accounts.bionav.qeintech.in/sign-in"
-              className="group inline-flex items-center gap-2 rounded-full bg-primary/90 px-6 py-3 text-lg font-semibold text-primary-foreground transition-all hover:bg-primary hover:shadow-[0_0_15px_rgba(0,0,0,0.2)] hover:scale-105"
-            >
-              Try BioNav
-              <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
-            </a>
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* background layers */}
+        <div className="absolute inset-0 w-full h-full">
+          <div className="absolute inset-0 z-0">
+            <ParticlesBackground />
           </div>
-          <p className="mt-8 text-sm text-gray-500">
-            Made with ❤️ by Karan
-          </p>
+          {/* gradient overlays */}
+          <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/50 to-background/95 backdrop-blur-[8px] z-[1]" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(14,159,133,0.15),transparent)] z-[2]" />
+        </div>
+
+        {/* content */}
+        <div className="container relative z-10 px-4 mx-auto">
+          <div className="text-center space-y-8 max-w-4xl mx-auto">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px] animate-pulse" />
+            
+            <div className="relative">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-white to-white/70 animate-fade-in-up">
+                Your Biology Learning
+                <br />
+                Journey Starts Here
+              </h1>
+            </div>
+
+            <p className="text-lg md:text-xl text-gray-400/90 max-w-2xl mx-auto animate-fade-in-up animation-delay-200">
+              Explore biology concepts, study pathogens, create flashcards, and chat with our AI tutor.
+            </p>
+
+            <div className="flex justify-center items-center gap-6 animate-fade-in-up animation-delay-400">
+              <a
+                href="https://accounts.bionav.qeintech.in/sign-in"
+                className="group relative inline-flex items-center gap-2 rounded-full bg-primary/90 px-8 py-4 text-lg font-semibold text-primary-foreground transition-all hover:bg-primary hover:shadow-[0_0_30px_rgba(14,159,133,0.3)] hover:scale-105"
+              >
+                <span className="relative z-10">Try BioNav</span>
+                <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+                <div className="absolute inset-0 rounded-full bg-primary opacity-0 group-hover:opacity-20 blur-xl transition-opacity" />
+              </a>
+            </div>
+
+            <p className="text-sm text-gray-500/80 animate-fade-in-up animation-delay-600">
+              Made with ❤️ by Karan
+            </p>
+          </div>
         </div>
       </section>
 
