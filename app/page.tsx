@@ -79,9 +79,10 @@ export default function HomePage() {
       </header>
 
       {/* hero section */}
-      <section className="relative pt-32 pb-16">
-        <div className="absolute inset-0 -z-10 overflow-hidden">
-          <div className="absolute left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#80ffea] to-[#8aff80] opacity-10 animate-pulse" />
+      <section className="relative pt-40 pb-24">
+        <div className="absolute inset-0 -z-10">
+          <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
+          <div className="absolute left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#80ffea] to-[#8aff80] opacity-20 animate-pulse" />
         </div>
         <div className="container mx-auto px-4 text-center">
           <h1 className="mx-auto max-w-4xl text-4xl font-bold tracking-tight sm:text-6xl">
@@ -103,7 +104,7 @@ export default function HomePage() {
       </section>
 
       {/* features section */}
-      <section id="features" className="py-16">
+      <section id="features" className="py-24">
         <div className="container mx-auto px-4">
           <h2 className="text-center text-3xl font-bold">Features</h2>
           <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">

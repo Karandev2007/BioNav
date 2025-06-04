@@ -58,7 +58,7 @@ export function Sidebar() {
   };
 
   return (
-    <div className="flex h-full w-full flex-col space-y-4 bg-card py-4">
+    <div className="flex h-full w-full flex-col space-y-4 bg-card/60 backdrop-blur-sm border-r py-4">
       <div className="flex items-center px-3 py-2">
         <Link href="/dashboard" className="flex items-center gap-2 pl-3">
           <div className="relative h-8 w-8">
