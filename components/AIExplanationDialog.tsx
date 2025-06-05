@@ -10,6 +10,19 @@ interface AIExplanationDialogProps {
   isLoading: boolean;
 }
 
+const formatText = (text: string) => {
+  // bold text maker
+  const parts = text.split(/(\*\*.*?\*\*)/g);
+  
+  return parts.map((part, index) => {
+    if (part.startsWith('**') && part.endsWith('**')) {
+      const boldText = part.slice(2, -2);
+      return <strong key={index} className="text-primary">{boldText}</strong>;
+    }
+    return <span key={index}>{part}</span>;
+  });
+};
+
 export default function AIExplanationDialog({
   isOpen,
   onClose,
@@ -38,7 +51,7 @@ export default function AIExplanationDialog({
             ) : (
               <div className="prose prose-invert max-w-none">
                 {explanation.split('\n').map((paragraph, index) => (
-                  <p key={index}>{paragraph}</p>
+                  <p key={index}>{formatText(paragraph)}</p>
                 ))}
               </div>
             )}

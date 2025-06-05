@@ -3,15 +3,18 @@
 import { useState } from "react";
 import terms from "@/data/biology-terms.json";
 import AIExplanationDialog from "@/components/AIExplanationDialog";
-import { Sparkles } from "lucide-react";
+import PathogenInfoDialog from "@/components/PathogenInfoDialog";
+import { Sparkles, Info } from "lucide-react";
 import { toast } from "sonner";
 
 export default function DictionaryPage() {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("all");
   const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [isPathogenDialogOpen, setIsPathogenDialogOpen] = useState(false);
   const [selectedTopic, setSelectedTopic] = useState("");
   const [explanation, setExplanation] = useState("");
+  const [pathogenInfo, setPathogenInfo] = useState<{ symptoms?: string; causes?: string; treatments?: string; }>({});
   const [isLoading, setIsLoading] = useState(false);
 
   const filteredTerms = terms.terms.filter((term) => {
@@ -25,7 +28,7 @@ export default function DictionaryPage() {
     setSelectedTopic(topic);
     setIsDialogOpen(true);
     setIsLoading(true);
-    setExplanation(""); // Clear previous explanation
+    setExplanation("");
 
     try {
       const response = await fetch("/api/ai-explanation", {
@@ -49,7 +52,43 @@ export default function DictionaryPage() {
       console.error("Error getting AI explanation:", errorMessage);
       toast.error(errorMessage);
       setExplanation("An error occurred while generating the explanation. Please try again.");
-      // keep the dialog open to show the error message
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const handleGetPathogenInfo = async (pathogen: string) => {
+    setSelectedTopic(pathogen);
+    setIsPathogenDialogOpen(true);
+    setIsLoading(true);
+    setPathogenInfo({});
+
+    try {
+      const response = await fetch("/api/pathogen-info", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ pathogen }),
+        cache: 'no-store',
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || `Error: ${response.status}`);
+      }
+
+      setPathogenInfo(data.info);
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : "Failed to get pathogen information";
+      console.error("Error getting pathogen info:", errorMessage);
+      toast.error(errorMessage);
+      setPathogenInfo({
+        symptoms: "Error loading information. Please try again.",
+        causes: "Error loading information. Please try again.",
+        treatments: "Error loading information. Please try again.",
+      });
     } finally {
       setIsLoading(false);
     }
@@ -104,14 +143,26 @@ export default function DictionaryPage() {
                 </span>
               ))}
             </div>
-            <button
-              className="mt-3 inline-flex items-center gap-1.5 text-sm text-primary hover:underline disabled:opacity-50 disabled:cursor-not-allowed"
-              onClick={() => handleGetAIExplanation(term.term)}
-              disabled={isLoading}
-            >
-              <Sparkles className="h-4 w-4" />
-              {isLoading ? "Generating..." : "Get AI Explanation"}
-            </button>
+            <div className="mt-3 flex gap-3">
+              <button
+                className="inline-flex items-center gap-1.5 text-sm text-primary hover:underline disabled:opacity-50 disabled:cursor-not-allowed"
+                onClick={() => handleGetAIExplanation(term.term)}
+                disabled={isLoading}
+              >
+                <Sparkles className="h-4 w-4" />
+                {isLoading ? "Generating..." : "Get AI Explanation"}
+              </button>
+              {term.category === "Pathogen" && (
+                <button
+                  className="inline-flex items-center gap-1.5 text-sm text-primary hover:underline disabled:opacity-50 disabled:cursor-not-allowed"
+                  onClick={() => handleGetPathogenInfo(term.term)}
+                  disabled={isLoading}
+                >
+                  <Info className="h-4 w-4" />
+                  {isLoading ? "Loading..." : "Learn More"}
+                </button>
+              )}
+            </div>
           </div>
         ))}
       </div>
@@ -124,6 +175,17 @@ export default function DictionaryPage() {
         }}
         topic={selectedTopic}
         explanation={explanation}
+        isLoading={isLoading}
+      />
+
+      <PathogenInfoDialog
+        isOpen={isPathogenDialogOpen}
+        onClose={() => {
+          setIsPathogenDialogOpen(false);
+          setPathogenInfo({});
+        }}
+        pathogenName={selectedTopic}
+        info={pathogenInfo}
         isLoading={isLoading}
       />
     </div>

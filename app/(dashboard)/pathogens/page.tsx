@@ -1,12 +1,18 @@
 "use client";
 
 import { useState } from "react";
-import { Search } from "lucide-react";
+import { Search, Info } from "lucide-react";
 import pathogens from "@/data/pathogens.json";
+import PathogenInfoDialog from "@/components/PathogenInfoDialog";
+import { toast } from "sonner";
 
 export default function PathogensPage() {
   const [search, setSearch] = useState("");
   const [type, setType] = useState("all");
+  const [isPathogenDialogOpen, setIsPathogenDialogOpen] = useState(false);
+  const [selectedPathogen, setSelectedPathogen] = useState("");
+  const [pathogenInfo, setPathogenInfo] = useState<{ symptoms?: string; causes?: string; treatments?: string; }>({});
+  const [isLoading, setIsLoading] = useState(false);
 
   const filteredPathogens = pathogens.pathogens.filter((pathogen) => {
     const matchesSearch = 
@@ -15,6 +21,43 @@ export default function PathogensPage() {
     const matchesType = type === "all" || pathogen.type.toLowerCase() === type.toLowerCase();
     return matchesSearch && matchesType;
   });
+
+  const handleGetPathogenInfo = async (pathogen: string) => {
+    setSelectedPathogen(pathogen);
+    setIsPathogenDialogOpen(true);
+    setIsLoading(true);
+    setPathogenInfo({});
+
+    try {
+      const response = await fetch("/api/pathogen-info", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ pathogen }),
+        cache: 'no-store',
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || `Error: ${response.status}`);
+      }
+
+      setPathogenInfo(data.info);
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : "Failed to get pathogen information";
+      console.error("Error getting pathogen info:", errorMessage);
+      toast.error(errorMessage);
+      setPathogenInfo({
+        symptoms: "Error loading information. Please try again.",
+        causes: "Error loading information. Please try again.",
+        treatments: "Error loading information. Please try again.",
+      });
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   return (
     <div className="container mx-auto p-6">
@@ -64,9 +107,30 @@ export default function PathogensPage() {
             </div>
             <h3 className="mb-2 font-semibold">{pathogen.name}</h3>
             <p className="text-sm text-muted-foreground">{pathogen.description}</p>
+            <div className="mt-3">
+              <button
+                className="inline-flex items-center gap-1.5 text-sm text-primary hover:underline disabled:opacity-50 disabled:cursor-not-allowed"
+                onClick={() => handleGetPathogenInfo(pathogen.name)}
+                disabled={isLoading}
+              >
+                <Info className="h-4 w-4" />
+                {isLoading && selectedPathogen === pathogen.name ? "Loading..." : "Learn More"}
+              </button>
+            </div>
           </div>
         ))}
       </div>
+
+      <PathogenInfoDialog
+        isOpen={isPathogenDialogOpen}
+        onClose={() => {
+          setIsPathogenDialogOpen(false);
+          setPathogenInfo({});
+        }}
+        pathogenName={selectedPathogen}
+        info={pathogenInfo}
+        isLoading={isLoading}
+      />
 
       <footer className="mt-8 text-center text-sm text-muted-foreground">
         Made with ❤️ by Karan
