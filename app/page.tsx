@@ -165,7 +165,7 @@ export default function HomePage() {
               </div>
               <div className="relative aspect-[16/9] mt-4">
                 <Image
-                  src="/logo.png"
+                  src="/dash.png"
                   alt="BioNav Dashboard Preview"
                   fill
                   className="rounded-lg object-cover"
