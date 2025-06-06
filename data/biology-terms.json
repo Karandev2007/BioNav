@@ -1044,6 +1044,666 @@
         "kinetochore",
         "microtubules"
       ]
+    },
+    {
+      "id": "homeostasis",
+      "term": "Homeostasis",
+      "definition": "The ability of an organism or cell to maintain a stable internal environment despite changes in external conditions.",
+      "category": "Basic",
+      "related": [
+        "regulation",
+        "feedback-loop",
+        "stability"
+      ]
+    },
+    {
+      "id": "feedback-loop",
+      "term": "Feedback Loop",
+      "definition": "A biological mechanism in which the output of a process influences the operation of the process itself, either enhancing (positive) or inhibiting (negative) it.",
+      "category": "Advanced",
+      "related": [
+        "homeostasis",
+        "regulation",
+        "signal-transduction"
+      ]
+    },
+    {
+      "id": "transcription",
+      "term": "Transcription",
+      "definition": "The process of copying a segment of DNA into RNA, especially mRNA, by the enzyme RNA polymerase.",
+      "category": "Basic",
+      "related": [
+        "translation",
+        "rna",
+        "gene-expression"
+      ]
+    },
+    {
+      "id": "translation",
+      "term": "Translation",
+      "definition": "The process by which the sequence of a messenger RNA (mRNA) is used to build a corresponding protein.",
+      "category": "Basic",
+      "related": [
+        "transcription",
+        "ribosome",
+        "protein"
+      ]
+    },
+    {
+      "id": "operon",
+      "term": "Operon",
+      "definition": "A cluster of genes under the control of a single promoter and regulated together, commonly found in prokaryotes.",
+      "category": "Advanced",
+      "related": [
+        "gene-expression",
+        "lac-operon",
+        "regulation"
+      ]
+    },
+    {
+      "id": "lac-operon",
+      "term": "Lac Operon",
+      "definition": "A well-studied operon in E. coli that controls the metabolism of lactose, often used to illustrate gene regulation.",
+      "category": "Advanced",
+      "related": [
+        "operon",
+        "gene-expression",
+        "regulation"
+      ]
+    },
+    {
+      "id": "enzyme-substrate-complex",
+      "term": "Enzyme-Substrate Complex",
+      "definition": "The intermediate formed when an enzyme binds to its substrate during a biochemical reaction.",
+      "category": "Basic",
+      "related": [
+        "enzyme",
+        "substrate",
+        "active-site"
+      ]
+    },
+    {
+      "id": "active-site",
+      "term": "Active Site",
+      "definition": "The region on an enzyme where the substrate binds and the chemical reaction occurs.",
+      "category": "Basic",
+      "related": [
+        "enzyme",
+        "substrate",
+        "enzyme-substrate-complex"
+      ]
+    },
+    {
+      "id": "substrate",
+      "term": "Substrate",
+      "definition": "The specific reactant that an enzyme acts upon during a biochemical reaction.",
+      "category": "Basic",
+      "related": [
+        "enzyme",
+        "active-site",
+        "reaction"
+      ]
+    },
+    {
+      "id": "phagocytosis",
+      "term": "Phagocytosis",
+      "definition": "A type of endocytosis in which a cell engulfs large particles or even whole cells.",
+      "category": "Basic",
+      "related": [
+        "endocytosis",
+        "white-blood-cell",
+        "immune-system"
+      ]
+    },
+    {
+      "id": "endocytosis",
+      "term": "Endocytosis",
+      "definition": "A cellular process in which substances are brought into the cell by engulfing them in a vesicle.",
+      "category": "Basic",
+      "related": [
+        "phagocytosis",
+        "pinocytosis",
+        "vesicle"
+      ]
+    },
+    {
+      "id": "pinocytosis",
+      "term": "Pinocytosis",
+      "definition": "A type of endocytosis where a cell ingests extracellular fluid and its dissolved solutes.",
+      "category": "Advanced",
+      "related": [
+        "endocytosis",
+        "phagocytosis",
+        "vesicle"
+      ]
+    },
+    {
+      "id": "exocytosis",
+      "term": "Exocytosis",
+      "definition": "A process by which a cell transports secretory products through the cytoplasm to the plasma membrane for release.",
+      "category": "Basic",
+      "related": [
+        "vesicle",
+        "endocytosis",
+        "secretion"
+      ]
+    },
+    {
+      "id": "cytokinesis",
+      "term": "Cytokinesis",
+      "definition": "The division of the cytoplasm to form two separate daughter cells after mitosis or meiosis.",
+      "category": "Basic",
+      "related": [
+        "mitosis",
+        "cell-division",
+        "cleavage-furrow"
+      ]
+    },
+    {
+      "id": "cleavage-furrow",
+      "term": "Cleavage Furrow",
+      "definition": "A shallow groove in the cell surface near the old metaphase plate of an animal cell undergoing cytokinesis.",
+      "category": "Advanced",
+      "related": [
+        "cytokinesis",
+        "actin",
+        "cell-division"
+      ]
+    },
+    {
+      "id": "cell-plate",
+      "term": "Cell Plate",
+      "definition": "A structure that forms in plant cells during cytokinesis and eventually develops into a separating cell wall.",
+      "category": "Advanced",
+      "related": [
+        "cytokinesis",
+        "cell-wall",
+        "plant-cell"
+      ]
+    },
+    {
+      "id": "chromatin",
+      "term": "Chromatin",
+      "definition": "The complex of DNA and proteins that forms chromosomes within the nucleus of eukaryotic cells.",
+      "category": "Basic",
+      "related": [
+        "dna",
+        "chromosome",
+        "histone"
+      ]
+    },
+    {
+      "id": "histone",
+      "term": "Histone",
+      "definition": "A type of protein found in cell nuclei that packages and orders DNA into structural units called nucleosomes.",
+      "category": "Advanced",
+      "related": [
+        "chromatin",
+        "dna",
+        "nucleosome"
+      ]
+    },
+    {
+      "id": "nucleosome",
+      "term": "Nucleosome",
+      "definition": "The fundamental unit of chromatin, consisting of a segment of DNA wound around a core of histone proteins.",
+      "category": "Advanced",
+      "related": [
+        "histone",
+        "chromatin",
+        "dna"
+      ]
+    },
+    {
+      "id": "plasmid",
+      "term": "Plasmid",
+      "definition": "A small, circular piece of DNA that is separate from chromosomal DNA and can replicate independently, often found in bacteria.",
+      "category": "Advanced",
+      "related": [
+        "bacteria",
+        "genetic-engineering",
+        "dna"
+      ]
+    },
+    {
+      "id": "transposon",
+      "term": "Transposon",
+      "definition": "A DNA sequence that can change its position within the genome, sometimes creating mutations and altering the cell's genome size.",
+      "category": "Advanced",
+      "related": [
+        "mutation",
+        "genome",
+        "dna"
+      ]
+    },
+    {
+      "id": "epigenetics",
+      "term": "Epigenetics",
+      "definition": "The study of changes in gene expression caused by mechanisms other than changes in the DNA sequence.",
+      "category": "Advanced",
+      "related": [
+        "gene-expression",
+        "dna-methylation",
+        "histone-modification"
+      ]
+    },
+    {
+      "id": "operator",
+      "term": "Operator",
+      "definition": "A segment of DNA to which a repressor binds, thereby regulating the expression of one or more genes.",
+      "category": "Advanced",
+      "related": [
+        "operon",
+        "repressor",
+        "gene-expression"
+      ]
+    },
+    {
+      "id": "operon",
+      "term": "Operon",
+      "definition": "A functioning unit of genomic DNA containing a cluster of genes under the control of a single promoter.",
+      "category": "Advanced",
+      "related": [
+        "lac-operon",
+        "operator",
+        "promoter"
+      ]
+    },
+    {
+      "id": "lac-operon",
+      "term": "Lac Operon",
+      "definition": "A well-known operon in bacteria that controls the metabolism of lactose.",
+      "category": "Advanced",
+      "related": [
+        "operon",
+        "gene-regulation",
+        "lactose"
+      ]
+    },
+    {
+      "id": "cytochrome",
+      "term": "Cytochrome",
+      "definition": "A class of proteins involved in electron transport and energy production in mitochondria and chloroplasts.",
+      "category": "Advanced",
+      "related": [
+        "electron-transport-chain",
+        "mitochondria",
+        "chloroplast"
+      ]
+    },
+    {
+      "id": "nitrification",
+      "term": "Nitrification",
+      "definition": "A microbial process by which ammonia is converted into nitrate, essential for nitrogen cycling in ecosystems.",
+      "category": "Advanced",
+      "related": [
+        "nitrogen-cycle",
+        "ammonia",
+        "nitrate"
+      ]
+    },
+    {
+      "id": "denitrification",
+      "term": "Denitrification",
+      "definition": "A microbial process that converts nitrate to nitrogen gas, returning nitrogen to the atmosphere.",
+      "category": "Advanced",
+      "related": [
+        "nitrate",
+        "nitrogen-cycle",
+        "bacteria"
+      ]
+    },
+    {
+      "id": "lytic-cycle",
+      "term": "Lytic Cycle",
+      "definition": "A viral reproductive cycle in which a virus enters a host cell, replicates, and causes the cell to burst.",
+      "category": "Basic",
+      "related": [
+        "virus",
+        "lysogenic-cycle",
+        "bacteriophage"
+      ]
+    },
+    {
+      "id": "lysogenic-cycle",
+      "term": "Lysogenic Cycle",
+      "definition": "A viral reproductive cycle where the viral DNA is integrated into the host genome and replicated with it without causing immediate lysis.",
+      "category": "Advanced",
+      "related": [
+        "virus",
+        "lytic-cycle",
+        "prophage"
+      ]
+    },
+    {
+      "id": "telomerase",
+      "term": "Telomerase",
+      "definition": "An enzyme that adds repetitive sequences to the ends of chromosomes, maintaining telomere length and genome stability.",
+      "category": "Advanced",
+      "related": [
+        "telomere",
+        "chromosome",
+        "enzyme"
+      ]
+    },
+    {
+      "id": "telomere",
+      "term": "Telomere",
+      "definition": "The protective cap at the end of a chromosome that prevents it from deterioration or fusion with neighboring chromosomes.",
+      "category": "Advanced",
+      "related": [
+        "telomerase",
+        "chromosome",
+        "dna"
+      ]
+    },
+    {
+      "id": "cytokine",
+      "term": "Cytokine",
+      "definition": "A broad category of small proteins important in cell signaling, especially in immune responses.",
+      "category": "Advanced",
+      "related": [
+        "immune-system",
+        "inflammation",
+        "interleukin"
+      ]
+    },
+    {
+      "id": "interleukin",
+      "term": "Interleukin",
+      "definition": "A type of cytokine that mediates communication between immune cells and regulates immune responses.",
+      "category": "Advanced",
+      "related": [
+        "cytokine",
+        "immune-system",
+        "white-blood-cells"
+      ]
+    },
+    {
+      "id": "neurotransmitter",
+      "term": "Neurotransmitter",
+      "definition": "Chemical messengers that transmit signals across a synapse from one neuron to another.",
+      "category": "Basic",
+      "related": [
+        "synapse",
+        "nervous-system",
+        "neuron"
+      ]
+    },
+    {
+      "id": "synapse",
+      "term": "Synapse",
+      "definition": "The junction between two neurons where neurotransmitters are released to transmit signals.",
+      "category": "Basic",
+      "related": [
+        "neurotransmitter",
+        "neuron",
+        "nervous-system"
+      ]
+    },
+    {
+      "id": "axon",
+      "term": "Axon",
+      "definition": "The long, thread-like part of a neuron that transmits impulses away from the cell body.",
+      "category": "Basic",
+      "related": [
+        "neuron",
+        "nerve-impulse",
+        "synapse"
+      ]
+    },
+    {
+      "id": "dendrite",
+      "term": "Dendrite",
+      "definition": "Branched extensions of a neuron that receive signals from other neurons.",
+      "category": "Basic",
+      "related": [
+        "neuron",
+        "synapse",
+        "axon"
+      ]
+    },
+    {
+      "id": "neuron",
+      "term": "Neuron",
+      "definition": "A specialized cell transmitting nerve impulses; the basic unit of the nervous system.",
+      "category": "Basic",
+      "related": [
+        "axon",
+        "dendrite",
+        "synapse"
+      ]
+    },
+    {
+      "id": "myelin-sheath",
+      "term": "Myelin Sheath",
+      "definition": "A fatty layer that surrounds the axon of some neurons and increases the speed of impulse transmission.",
+      "category": "Advanced",
+      "related": [
+        "axon",
+        "neuron",
+        "nervous-system"
+      ]
+    },
+    {
+      "id": "glycolysis",
+      "term": "Glycolysis",
+      "definition": "The metabolic pathway that breaks down glucose into pyruvate, producing ATP and NADH in the process.",
+      "category": "Intermediate",
+      "related": [
+        "cellular-respiration",
+        "atp",
+        "glucose"
+      ]
+    },
+    {
+      "id": "krebs-cycle",
+      "term": "Krebs Cycle",
+      "definition": "A series of chemical reactions used by all aerobic organisms to generate energy through the oxidation of acetate.",
+      "category": "Advanced",
+      "related": [
+        "cellular-respiration",
+        "atp",
+        "mitochondria"
+      ]
+    },
+    {
+      "id": "electron-transport-chain",
+      "term": "Electron Transport Chain",
+      "definition": "A series of proteins in the inner mitochondrial membrane that transfer electrons and produce ATP.",
+      "category": "Advanced",
+      "related": [
+        "cellular-respiration",
+        "mitochondria",
+        "oxidative-phosphorylation"
+      ]
+    },
+    {
+      "id": "fermentation",
+      "term": "Fermentation",
+      "definition": "An anaerobic process that allows glycolysis to continue by regenerating NAD+, producing lactic acid or ethanol.",
+      "category": "Intermediate",
+      "related": [
+        "anaerobic",
+        "glycolysis",
+        "atp"
+      ]
+    },
+    {
+      "id": "lactic-acid",
+      "term": "Lactic Acid",
+      "definition": "A byproduct of anaerobic respiration in animal cells, especially during intense exercise.",
+      "category": "Basic",
+      "related": [
+        "fermentation",
+        "anaerobic",
+        "muscles"
+      ]
+    },
+    {
+      "id": "ethanol-fermentation",
+      "term": "Ethanol Fermentation",
+      "definition": "A form of anaerobic respiration where glucose is converted to ethanol and carbon dioxide.",
+      "category": "Intermediate",
+      "related": [
+        "fermentation",
+        "yeast",
+        "anaerobic"
+      ]
+    },
+    {
+      "id": "photosynthesis",
+      "term": "Photosynthesis",
+      "definition": "The process by which green plants and some organisms use sunlight to synthesize food from carbon dioxide and water.",
+      "category": "Basic",
+      "related": [
+        "chloroplast",
+        "sunlight",
+        "glucose"
+      ]
+    },
+    {
+      "id": "chloroplast",
+      "term": "Chloroplast",
+      "definition": "An organelle in plant cells that contains chlorophyll and where photosynthesis takes place.",
+      "category": "Basic",
+      "related": [
+        "photosynthesis",
+        "plant-cell",
+        "sunlight"
+      ]
+    },
+    {
+      "id": "chlorophyll",
+      "term": "Chlorophyll",
+      "definition": "The green pigment in plants that absorbs light energy used to carry out photosynthesis.",
+      "category": "Basic",
+      "related": [
+        "photosynthesis",
+        "chloroplast",
+        "pigment"
+      ]
+    },
+    {
+      "id": "stroma",
+      "term": "Stroma",
+      "definition": "The fluid-filled space surrounding the grana in chloroplasts where the Calvin Cycle occurs.",
+      "category": "Advanced",
+      "related": [
+        "chloroplast",
+        "photosynthesis",
+        "calvin-cycle"
+      ]
+    },
+    {
+      "id": "calvin-cycle",
+      "term": "Calvin Cycle",
+      "definition": "A set of chemical reactions that take place in chloroplasts during photosynthesis, converting carbon dioxide into glucose.",
+      "category": "Advanced",
+      "related": [
+        "photosynthesis",
+        "stroma",
+        "glucose"
+      ]
+    },
+    {
+      "id": "autotroph",
+      "term": "Autotroph",
+      "definition": "An organism that produces its own food from inorganic substances, using light or chemical energy.",
+      "category": "Basic",
+      "related": [
+        "photosynthesis",
+        "producer",
+        "energy"
+      ]
+    },
+    {
+      "id": "heterotroph",
+      "term": "Heterotroph",
+      "definition": "An organism that obtains food by consuming other organisms, unable to produce its own food.",
+      "category": "Basic",
+      "related": [
+        "consumer",
+        "autotroph",
+        "nutrition"
+      ]
+    },
+    {
+      "id": "fermentation",
+      "term": "Fermentation",
+      "definition": "An anaerobic process that produces energy by breaking down glucose without oxygen, resulting in products like lactic acid or ethanol.",
+      "category": "Intermediate",
+      "related": [
+        "anaerobic",
+        "glycolysis",
+        "energy"
+      ]
+    },
+    {
+      "id": "photosystem",
+      "term": "Photosystem",
+      "definition": "A protein-pigment complex in chloroplasts that captures light energy for photosynthesis.",
+      "category": "Advanced",
+      "related": [
+        "chlorophyll",
+        "light-dependent reactions",
+        "photosynthesis"
+      ]
+    },
+    {
+      "id": "flagella",
+      "term": "Flagella",
+      "definition": "Long, whip-like structures that enable cell movement in some bacteria and eukaryotic cells.",
+      "category": "Basic",
+      "related": [
+        "cilia",
+        "cell-motility",
+        "microtubules"
+      ]
+    },
+    {
+      "id": "cilia",
+      "term": "Cilia",
+      "definition": "Short hair-like structures on the surface of some cells that aid in movement or sensory functions.",
+      "category": "Basic",
+      "related": [
+        "flagella",
+        "cell-motility",
+        "microtubules"
+      ]
+    },
+    {
+      "id": "plasma-membrane",
+      "term": "Plasma Membrane",
+      "definition": "A selectively permeable membrane that surrounds the cell, controlling entry and exit of substances.",
+      "category": "Basic",
+      "related": [
+        "cell-membrane",
+        "transport",
+        "osmosis"
+      ]
+    },
+    {
+      "id": "endocytosis",
+      "term": "Endocytosis",
+      "definition": "The process by which cells engulf external substances, enclosing them in a vesicle for internalization.",
+      "category": "Intermediate",
+      "related": [
+        "vesicle",
+        "cell-membrane",
+        "phagocytosis"
+      ]
+    },
+    {
+      "id": "exocytosis",
+      "term": "Exocytosis",
+      "definition": "The process where cells expel materials by fusing vesicles with the plasma membrane.",
+      "category": "Intermediate",
+      "related": [
+        "vesicle",
+        "secretion",
+        "cell-membrane"
+      ]
     }
   ]
 }
