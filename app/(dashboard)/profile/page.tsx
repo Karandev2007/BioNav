@@ -1,11 +1,11 @@
-import ComingSoon from "@/components/coming-soon";
-import { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Profile | BioNav",
-  description: "Your BioNav Profile",
-};
+import { UserProfile } from "@clerk/nextjs";
 
 export default function ProfilePage() {
-  return <ComingSoon />;
+  return (
+    <div className="container mx-auto p-6">
+      <UserProfile />
+    </div>
+  );
 } 
